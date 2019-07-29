@@ -5,8 +5,6 @@ const initialState = {
 	failure: false,
 	errorMessage: {},
 	searchText: '',
-	showServerDropdown: false,
-	closeServerDropdown: false,
 	showSortDropdown: false,
 	showSearchHeader: false
 };

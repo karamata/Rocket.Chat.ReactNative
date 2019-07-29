@@ -3,6 +3,7 @@ import {
 } from 'redux-saga/effects';
 import { Alert } from 'react-native';
 import RNUserDefaults from 'rn-user-defaults';
+import { Base64 } from 'js-base64';
 
 import Navigation from '../lib/Navigation';
 import { SERVER } from '../actions/actionsTypes';
@@ -15,6 +16,7 @@ import RocketChat from '../lib/rocketchat';
 import database from '../lib/realm';
 import log from '../utils/log';
 import I18n from '../i18n';
+import random from '../utils/random';
 import { SERVERS, TOKEN, SERVER_URL } from '../constants/userDefaults';
 
 const getServerInfo = function* getServerInfo({ server, raiseError = true }) {
@@ -81,12 +83,26 @@ const handleServerRequest = function* handleServerRequest({ server }) {
 	try {
 		const serverInfo = yield getServerInfo({ server });
 
-		const loginServicesLength = yield RocketChat.getLoginServices(server);
-		if (loginServicesLength === 0) {
-			Navigation.navigate('LoginView');
-		} else {
-			Navigation.navigate('LoginSignupView');
-		}
+		const edinnovaService = yield RocketChat.getLoginServices(server);
+
+		const endpoint = edinnovaService.authorizePath.startsWith('http') ? edinnovaService.authorizePath : `${ edinnovaService.serverURL }${ edinnovaService.authorizePath }`;
+		// eslint-disable-next-line react/destructuring-assignment
+		const redirect_uri = `${ server }/_oauth/edinnova`;
+		// eslint-disable-next-line react/destructuring-assignment
+		const state = Base64.encodeURI(JSON.stringify({
+			loginStyle: 'popup',
+			credentialToken: random(43),
+			isCordova: true,
+			redirectUrl: `${ server }/_oauth/edinnova?close`,
+			close: true,
+			action: 'login'
+		}));
+		// eslint-disable-next-line react/destructuring-assignment
+		const params = `?client_id=${ edinnovaService.clientId }&redirect_uri=${ redirect_uri }&scope=${ edinnovaService.scope }&state=${ state }&response_type=code`;
+
+		console.log('>>>>>>>>>>>>>>>>> ', `${ endpoint }${ params }`);
+
+		Navigation.navigate('OAuthView', { oAuthUrl: `${ endpoint }${ params }` });
 
 		yield put(selectServerRequest(server, serverInfo.version, false));
 	} catch (e) {

@@ -747,17 +747,20 @@ const RocketChat = {
 			let loginServicesFilter = [];
 			const loginServicesResult = await fetch(`${ server }/api/v1/settings.oauth`).then(response => response.json());
 			// TODO: remove this after SAML and custom oauth
-			const availableOAuth = ['facebook', 'github', 'gitlab', 'google', 'linkedin', 'meteor-developer', 'twitter'];
+			const availableOAuth = ['edinnova'];
 			if (loginServicesResult.success && loginServicesResult.services.length > 0) {
 				const { services } = loginServicesResult;
-				loginServicesFilter = services.filter(item => availableOAuth.includes(item.name));
+				loginServicesFilter = services.filter(item => availableOAuth.includes(item.name || item.service));
 				const loginServicesReducer = loginServicesFilter.reduce((ret, item) => {
-					ret[item.name] = item;
+					ret[item.name || item.service] = {
+						...item,
+						name: item.name || item.service
+					};
 					return ret;
 				}, {});
 				reduxStore.dispatch(setLoginServices(loginServicesReducer));
 			}
-			return Promise.resolve(loginServicesFilter.length);
+			return Promise.resolve(loginServicesFilter[0]);
 		} catch (error) {
 			console.warn(error);
 			return Promise.reject();

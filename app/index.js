@@ -10,13 +10,13 @@ import PropTypes from 'prop-types';
 
 import { appInit } from './actions';
 import { deepLinkingOpen } from './actions/deepLinking';
-import LoginSignupView from './views/LoginSignupView';
+// import LoginSignupView from './views/LoginSignupView';
 import AuthLoadingView from './views/AuthLoadingView';
 import RoomsListView from './views/RoomsListView';
 import RoomView from './views/RoomView';
 import NewMessageView from './views/NewMessageView';
 import DirectoryView from './views/DirectoryView';
-import LoginView from './views/LoginView';
+// import LoginView from './views/LoginView';
 import Navigation from './lib/Navigation';
 import Sidebar from './views/SidebarView';
 import ProfileView from './views/ProfileView';
@@ -34,9 +34,9 @@ import MessagesView from './views/MessagesView';
 import AutoTranslateView from './views/AutoTranslateView';
 import SelectedUsersView from './views/SelectedUsersView';
 import CreateChannelView from './views/CreateChannelView';
-import LegalView from './views/LegalView';
-import ForgotPasswordView from './views/ForgotPasswordView';
-import RegisterView from './views/RegisterView';
+// import LegalView from './views/LegalView';
+// import ForgotPasswordView from './views/ForgotPasswordView';
+// import RegisterView from './views/RegisterView';
 import OAuthView from './views/OAuthView';
 import SetUsernameView from './views/SetUsernameView';
 import { HEADER_BACKGROUND, HEADER_TITLE, HEADER_BACK } from './constants/colors';
@@ -73,18 +73,18 @@ const defaultHeader = {
 };
 
 // Outside
-const OutsideStack = createStackNavigator({
-	LoginSignupView: {
-		screen: LoginSignupView,
-		header: null
-	},
-	LoginView,
-	ForgotPasswordView,
-	RegisterView,
-	LegalView
-}, {
-	defaultNavigationOptions: defaultHeader
-});
+// const OutsideStack = createStackNavigator({
+// 	// LoginSignupView: {
+// 	// 	screen: LoginSignupView,
+// 	// 	header: null
+// 	// },
+// 	// LoginView,
+// 	// ForgotPasswordView,
+// 	// RegisterView,
+// 	// LegalView
+// }, {
+// 	defaultNavigationOptions: defaultHeader
+// });
 
 const OAuthStack = createStackNavigator({
 	OAuthView
@@ -92,14 +92,14 @@ const OAuthStack = createStackNavigator({
 	defaultNavigationOptions: defaultHeader
 });
 
-const OutsideStackModal = createStackNavigator({
-	OutsideStack,
-	OAuthStack
-},
-{
-	mode: 'modal',
-	headerMode: 'none'
-});
+// const OutsideStackModal = createStackNavigator({
+// 	// OutsideStack,
+// 	OAuthStack
+// },
+// {
+// 	mode: 'modal',
+// 	headerMode: 'none'
+// });
 
 // Inside
 const ChatsStack = createStackNavigator({
@@ -219,7 +219,7 @@ class CustomInsideStack extends React.Component {
 
 const App = createAppContainer(createSwitchNavigator(
 	{
-		OutsideStack: OutsideStackModal,
+		OutsideStack: OAuthStack,
 		InsideStack: CustomInsideStack,
 		AuthLoading: AuthLoadingView,
 		SetUsernameStack
