@@ -2,20 +2,23 @@ import {
 	put, call, takeLatest, select, take, fork, cancel
 } from 'redux-saga/effects';
 import RNUserDefaults from 'rn-user-defaults';
+import { Base64 } from 'js-base64';
 
+import Navigation from '../lib/Navigation';
 import * as types from '../actions/actionsTypes';
 import { appStart } from '../actions';
-import { serverFinishAdd, serverRequest } from '../actions/server';
+import { serverFinishAdd } from '../actions/server';
 import { loginFailure, loginSuccess, setUser } from '../actions/login';
 import { roomsRequest } from '../actions/rooms';
 import RocketChat from '../lib/rocketchat';
 import log from '../utils/log';
 import I18n from '../i18n';
 import database from '../lib/realm';
-import appConfig from '../../app.json';
+import random from '../utils/random';
 import EventEmitter from '../utils/events';
 
 const getServer = state => state.server.server;
+const getServices = state => state.login.services;
 const loginWithPasswordCall = args => RocketChat.loginWithPassword(args);
 const loginCall = args => RocketChat.login(args);
 const logoutCall = args => RocketChat.logout(args);
@@ -102,7 +105,8 @@ const handleLoginSuccess = function* handleLoginSuccess({ user }) {
 
 const handleLogout = function* handleLogout() {
 	const server = yield select(getServer);
-	if (server) {
+	const services = yield select(getServices);
+	if (server && services) {
 		try {
 			yield call(logoutCall, { server });
 			const { serversDB } = database.databases;
@@ -113,10 +117,25 @@ const handleLogout = function* handleLogout() {
 			serversDB.write(() => {
 				serversDB.delete(serverRecord);
 			});
-			// if there's no servers, go outside
-			yield put(serverRequest(appConfig.server));
+			// yield put(serverRequest(server));
+			// eslint-disable-next-line react/destructuring-assignment
+			const endpoint = services.edinnova.logoutPath.startsWith('http') ? services.edinnova.logoutPath : `${ services.edinnova.serverURL }${ services.edinnova.logoutPath }`;
+			// eslint-disable-next-line react/destructuring-assignment
+			const redirect_uri = `${ server }/_oauth/edinnova`;
+			const state = Base64.encodeURI(JSON.stringify({
+				loginStyle: 'popup',
+				credentialToken: random(43),
+				isCordova: true,
+				// eslint-disable-next-line react/destructuring-assignment
+				redirectUrl: `${ server }/_oauth/edinnova?close`,
+				close: true,
+				action: 'logout'
+			}));
+			// eslint-disable-next-line react/destructuring-assignment
+			const params = `?client_id=${ services.edinnova.clientId }&redirect_uri=${ redirect_uri }&scope=${ services.edinnova.scope }&state=${ state }&response_type=code`;
+			Navigation.navigate('LogoutView', { logoutUrl: `${ endpoint }${ params }` });
 		} catch (e) {
-			yield put(serverRequest(appConfig.server));
+			// yield put(serverRequest(appConfig.server));
 			log('err_handle_logout', e);
 		}
 	}

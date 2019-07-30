@@ -100,8 +100,6 @@ const handleServerRequest = function* handleServerRequest({ server }) {
 		// eslint-disable-next-line react/destructuring-assignment
 		const params = `?client_id=${ edinnovaService.clientId }&redirect_uri=${ redirect_uri }&scope=${ edinnovaService.scope }&state=${ state }&response_type=code`;
 
-		console.log('>>>>>>>>>>>>>>>>> ', `${ endpoint }${ params }`);
-
 		Navigation.navigate('OAuthView', { oAuthUrl: `${ endpoint }${ params }` });
 
 		yield put(selectServerRequest(server, serverInfo.version, false));

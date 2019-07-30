@@ -38,7 +38,10 @@ export default function login(state = initialState, action) {
 				error: action.err
 			};
 		case types.LOGOUT:
-			return initialState;
+			return {
+				...initialState,
+				services: state.services
+			};
 		case types.USER.SET:
 			return {
 				...state,

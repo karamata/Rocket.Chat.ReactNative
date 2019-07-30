@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import { WebView } from 'react-native-webview';
 import { connect } from 'react-redux';
 import { ActivityIndicator, StyleSheet } from 'react-native';
+import URI from 'urijs';
+import { Base64 } from 'js-base64';
 
 import RocketChat from '../lib/rocketchat';
 import { isIOS } from '../utils/deviceInfo';
 import StatusBar from '../containers/StatusBar';
-import { appStart } from '../actions';
+import { appInit } from '../actions';
 
 const userAgent = isIOS
 	? 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1'
@@ -28,17 +30,18 @@ const styles = StyleSheet.create({
 @connect(state => ({
 	server: state.server.server
 }), dispatch => ({
-	appStart: root => dispatch(appStart(root))
+	appInit: root => dispatch(appInit(root))
 }))
-export default class OAuthView extends React.PureComponent {
+export default class LogoutView extends React.PureComponent {
 	static navigationOptions = () => ({
 		headerLeft: null,
-		title: 'Edinnova Login'
+		title: 'Edinnova Logout'
 	})
 
 	static propTypes = {
 		navigation: PropTypes.object,
-		server: PropTypes.string
+		server: PropTypes.string,
+		appInit: PropTypes.func
 	}
 
 	constructor(props) {
@@ -75,21 +78,30 @@ export default class OAuthView extends React.PureComponent {
 	render() {
 		const { navigation } = this.props;
 		const { loading } = this.state;
-		const oAuthUrl = navigation.getParam('oAuthUrl');
-		console.log('>>>>>>>>> ', oAuthUrl);
+		const logoutUrl = navigation.getParam('logoutUrl');
 		return (
 			<React.Fragment>
 				<StatusBar />
 				<WebView
 					useWebKit
-					source={{ uri: oAuthUrl }}
+					source={{ uri: logoutUrl }}
 					userAgent={userAgent}
 					onNavigationStateChange={(webViewState) => {
-						const url = decodeURIComponent(webViewState.url);
-						if (this.redirectRegex.test(url)) {
-							const parts = url.split('#');
-							const credentials = JSON.parse(parts[1]);
-							this.login({ oauth: { ...credentials } });
+						const urlObject = URI.parse(webViewState.url);
+						const queryObject = URI.parseQuery(urlObject.query);
+						const stateObj = JSON.parse(Base64.decode(queryObject.state));
+
+						if (stateObj.action === 'login') {
+							const url = decodeURIComponent(webViewState.url);
+							if (this.redirectRegex.test(url)) {
+								const parts = url.split('#');
+								const credentials = JSON.parse(parts[1]);
+								this.login({ oauth: { ...credentials } });
+							}
+						} else if (stateObj.action === 'logout') {
+							this.dismiss();
+							// eslint-disable-next-line react/destructuring-assignment
+							this.props.appInit();
 						}
 					}}
 					onLoadStart={() => {

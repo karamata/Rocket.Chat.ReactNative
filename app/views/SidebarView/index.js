@@ -190,36 +190,6 @@ export default class Sidebar extends Component {
 					testID='sidebar-chats'
 					current={activeItemKey === 'ChatsStack'}
 				/>
-				<SidebarItem
-					text={I18n.t('Profile')}
-					left={<CustomIcon name='user' size={20} color={COLOR_TEXT} />}
-					onPress={() => this.sidebarNavigate('ProfileView')}
-					testID='sidebar-profile'
-					current={activeItemKey === 'ProfileStack'}
-				/>
-				<SidebarItem
-					text={I18n.t('Settings')}
-					left={<CustomIcon name='cog' size={20} color={COLOR_TEXT} />}
-					onPress={() => this.sidebarNavigate('SettingsView')}
-					testID='sidebar-settings'
-					current={activeItemKey === 'SettingsStack'}
-				/>
-				{this.canSeeAdminPanel() ? (
-					<SidebarItem
-						text={I18n.t('Admin_Panel')}
-						left={<CustomIcon name='shield-alt' size={20} color={COLOR_TEXT} />}
-						onPress={() => this.sidebarNavigate('AdminPanelView')}
-						testID='sidebar-settings'
-						current={activeItemKey === 'AdminPanelStack'}
-					/>
-				) : null}
-				<Separator key='separator-logout' />
-				<SidebarItem
-					text={I18n.t('Logout')}
-					left={<CustomIcon name='sign-out' size={20} color={COLOR_TEXT} />}
-					onPress={this.logout}
-					testID='sidebar-logout'
-				/>
 			</React.Fragment>
 		);
 	}
@@ -278,6 +248,29 @@ export default class Sidebar extends Component {
 					{!showStatus ? this.renderNavigation() : null}
 					{showStatus ? this.renderStatus() : null}
 				</ScrollView>
+				<View style={{
+					marginHorizontal: 5,
+					marginBottom: 5
+				}}
+				>
+					<RectButton
+						key='sidebar-logout'
+						testID='sidebar-logout'
+						onPress={this.logout}
+						underlayColor={COLOR_TEXT}
+						activeOpacity={0.1}
+						style={[styles.item]}
+					>
+						<View style={styles.itemLeft}>
+							<CustomIcon name='sign-out' size={20} color={COLOR_TEXT} />
+						</View>
+						<View style={styles.itemCenter}>
+							<Text style={styles.itemText}>
+								{I18n.t('Logout')}
+							</Text>
+						</View>
+					</RectButton>
+				</View>
 			</SafeAreaView>
 		);
 	}

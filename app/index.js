@@ -19,10 +19,10 @@ import DirectoryView from './views/DirectoryView';
 // import LoginView from './views/LoginView';
 import Navigation from './lib/Navigation';
 import Sidebar from './views/SidebarView';
-import ProfileView from './views/ProfileView';
-import SettingsView from './views/SettingsView';
-import LanguageView from './views/LanguageView';
-import AdminPanelView from './views/AdminPanelView';
+// import ProfileView from './views/ProfileView';
+// import SettingsView from './views/SettingsView';
+// import LanguageView from './views/LanguageView';
+// import AdminPanelView from './views/AdminPanelView';
 import RoomActionsView from './views/RoomActionsView';
 import RoomInfoView from './views/RoomInfoView';
 import RoomInfoEditView from './views/RoomInfoEditView';
@@ -38,6 +38,7 @@ import CreateChannelView from './views/CreateChannelView';
 // import ForgotPasswordView from './views/ForgotPasswordView';
 // import RegisterView from './views/RegisterView';
 import OAuthView from './views/OAuthView';
+import LogoutView from './views/LogoutView';
 import SetUsernameView from './views/SetUsernameView';
 import { HEADER_BACKGROUND, HEADER_TITLE, HEADER_BACK } from './constants/colors';
 import parseQuery from './lib/methods/helpers/parseQuery';
@@ -87,7 +88,8 @@ const defaultHeader = {
 // });
 
 const OAuthStack = createStackNavigator({
-	OAuthView
+	OAuthView,
+	LogoutView
 }, {
 	defaultNavigationOptions: defaultHeader
 });
@@ -130,50 +132,50 @@ ChatsStack.navigationOptions = ({ navigation }) => {
 	};
 };
 
-const ProfileStack = createStackNavigator({
-	ProfileView
-}, {
-	defaultNavigationOptions: defaultHeader
-});
+// const ProfileStack = createStackNavigator({
+// 	ProfileView
+// }, {
+// 	defaultNavigationOptions: defaultHeader
+// });
 
-ProfileStack.navigationOptions = ({ navigation }) => {
-	let drawerLockMode = 'unlocked';
-	if (navigation.state.index > 0) {
-		drawerLockMode = 'locked-closed';
-	}
-	return {
-		drawerLockMode
-	};
-};
+// ProfileStack.navigationOptions = ({ navigation }) => {
+// 	let drawerLockMode = 'unlocked';
+// 	if (navigation.state.index > 0) {
+// 		drawerLockMode = 'locked-closed';
+// 	}
+// 	return {
+// 		drawerLockMode
+// 	};
+// };
 
-const SettingsStack = createStackNavigator({
-	SettingsView,
-	LanguageView
-}, {
-	defaultNavigationOptions: defaultHeader
-});
+// const SettingsStack = createStackNavigator({
+// 	SettingsView,
+// 	LanguageView
+// }, {
+// 	defaultNavigationOptions: defaultHeader
+// });
 
-const AdminPanelStack = createStackNavigator({
-	AdminPanelView
-}, {
-	defaultNavigationOptions: defaultHeader
-});
+// const AdminPanelStack = createStackNavigator({
+// 	AdminPanelView
+// }, {
+// 	defaultNavigationOptions: defaultHeader
+// });
 
-SettingsStack.navigationOptions = ({ navigation }) => {
-	let drawerLockMode = 'unlocked';
-	if (navigation.state.index > 0) {
-		drawerLockMode = 'locked-closed';
-	}
-	return {
-		drawerLockMode
-	};
-};
+// SettingsStack.navigationOptions = ({ navigation }) => {
+// 	let drawerLockMode = 'unlocked';
+// 	if (navigation.state.index > 0) {
+// 		drawerLockMode = 'locked-closed';
+// 	}
+// 	return {
+// 		drawerLockMode
+// 	};
+// };
 
 const ChatsDrawer = createDrawerNavigator({
-	ChatsStack,
-	ProfileStack,
-	SettingsStack,
-	AdminPanelStack
+	ChatsStack
+	// ProfileStack,
+	// SettingsStack,
+	// AdminPanelStack
 }, {
 	contentComponent: Sidebar
 });
