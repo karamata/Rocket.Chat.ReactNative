@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package com.edinnova.edchat;
 
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
@@ -23,7 +23,7 @@ public class MainActivity extends ReactFragmentActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "RocketChatRN";
+        return "EdChat";
     }
 
     @Override

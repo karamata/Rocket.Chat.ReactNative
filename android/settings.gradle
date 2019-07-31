@@ -1,7 +1,7 @@
 apply from: '../node_modules/react-native-unimodules/gradle.groovy'
 includeUnimodulesProjects()
 
-rootProject.name = 'RocketChatRN'
+rootProject.name = 'EdChat'
 include ':react-native-firebase'
 project(':react-native-firebase').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-firebase/android')
 include ':react-native-webview'

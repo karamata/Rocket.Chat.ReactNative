@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package com.edinnova.edchat;
 
 import android.app.Application;
 
@@ -34,7 +34,7 @@ import com.actionsheet.ActionSheetPackage;
 import io.realm.react.RealmReactPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 
-import chat.rocket.reactnative.generated.BasePackageList;
+import com.edinnova.edchat.generated.BasePackageList;
 
 import org.unimodules.adapters.react.ModuleRegistryAdapter;
 import org.unimodules.adapters.react.ReactModuleRegistryProvider;
