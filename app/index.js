@@ -50,7 +50,7 @@ useScreens();
 
 const parseDeepLinking = (url) => {
 	if (url) {
-		url = url.replace(/rocketchat:\/\/|https:\/\/go.rocket.chat\//, '');
+		url = url.replace(/edchat:\/\/|https:\/\/chatdev.edinnova.com\//, '');
 		const regex = /^(room|auth)\?/;
 		if (url.match(regex)) {
 			url = url.replace(regex, '').trim();

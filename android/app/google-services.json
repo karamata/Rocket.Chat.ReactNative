@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "185369482157",
-    "firebase_url": "https://edinnova-chat.firebaseio.com",
-    "project_id": "edinnova-chat",
-    "storage_bucket": "edinnova-chat.appspot.com"
+    "project_number": "649090337940",
+    "firebase_url": "https://edinnova-chat-dev.firebaseio.com",
+    "project_id": "edinnova-chat-dev",
+    "storage_bucket": "edinnova-chat-dev.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:185369482157:android:a0eed1795106be44",
+        "mobilesdk_app_id": "1:649090337940:android:a0eed1795106be44",
         "android_client_info": {
           "package_name": "com.edinnova.edchat"
         }
       },
       "oauth_client": [
         {
-          "client_id": "185369482157-sqo57i6a7fq78mhevak8io61m4pq550b.apps.googleusercontent.com",
+          "client_id": "649090337940-rt76rao89uibgj17u06ddi437t2kia69.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCJaN7HEkWYIDJYqtJVP5wLEVHRwL11j8M"
+          "current_key": "AIzaSyDrQvOKcJSKABtYfwdl5xvyq3f33dtjt4s"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "185369482157-sqo57i6a7fq78mhevak8io61m4pq550b.apps.googleusercontent.com",
+              "client_id": "649090337940-rt76rao89uibgj17u06ddi437t2kia69.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
