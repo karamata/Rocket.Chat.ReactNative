@@ -10,19 +10,13 @@ import PropTypes from 'prop-types';
 
 import { appInit } from './actions';
 import { deepLinkingOpen } from './actions/deepLinking';
-// import LoginSignupView from './views/LoginSignupView';
 import AuthLoadingView from './views/AuthLoadingView';
 import RoomsListView from './views/RoomsListView';
 import RoomView from './views/RoomView';
 import NewMessageView from './views/NewMessageView';
 import DirectoryView from './views/DirectoryView';
-// import LoginView from './views/LoginView';
 import Navigation from './lib/Navigation';
 import Sidebar from './views/SidebarView';
-// import ProfileView from './views/ProfileView';
-// import SettingsView from './views/SettingsView';
-// import LanguageView from './views/LanguageView';
-// import AdminPanelView from './views/AdminPanelView';
 import RoomActionsView from './views/RoomActionsView';
 import RoomInfoView from './views/RoomInfoView';
 import RoomInfoEditView from './views/RoomInfoEditView';
@@ -34,9 +28,6 @@ import MessagesView from './views/MessagesView';
 import AutoTranslateView from './views/AutoTranslateView';
 import SelectedUsersView from './views/SelectedUsersView';
 import CreateChannelView from './views/CreateChannelView';
-// import LegalView from './views/LegalView';
-// import ForgotPasswordView from './views/ForgotPasswordView';
-// import RegisterView from './views/RegisterView';
 import OAuthView from './views/OAuthView';
 import LogoutView from './views/LogoutView';
 import SetUsernameView from './views/SetUsernameView';
@@ -73,37 +64,18 @@ const defaultHeader = {
 	headerTintColor: HEADER_BACK
 };
 
-// Outside
-// const OutsideStack = createStackNavigator({
-// 	// LoginSignupView: {
-// 	// 	screen: LoginSignupView,
-// 	// 	header: null
-// 	// },
-// 	// LoginView,
-// 	// ForgotPasswordView,
-// 	// RegisterView,
-// 	// LegalView
-// }, {
-// 	defaultNavigationOptions: defaultHeader
-// });
-
 const OAuthStack = createStackNavigator({
-	OAuthView,
+	OAuthView
+}, {
+	defaultNavigationOptions: defaultHeader
+});
+
+const LogoutStack = createStackNavigator({
 	LogoutView
 }, {
 	defaultNavigationOptions: defaultHeader
 });
 
-// const OutsideStackModal = createStackNavigator({
-// 	// OutsideStack,
-// 	OAuthStack
-// },
-// {
-// 	mode: 'modal',
-// 	headerMode: 'none'
-// });
-
-// Inside
 const ChatsStack = createStackNavigator({
 	RoomsListView,
 	RoomView,
@@ -132,50 +104,8 @@ ChatsStack.navigationOptions = ({ navigation }) => {
 	};
 };
 
-// const ProfileStack = createStackNavigator({
-// 	ProfileView
-// }, {
-// 	defaultNavigationOptions: defaultHeader
-// });
-
-// ProfileStack.navigationOptions = ({ navigation }) => {
-// 	let drawerLockMode = 'unlocked';
-// 	if (navigation.state.index > 0) {
-// 		drawerLockMode = 'locked-closed';
-// 	}
-// 	return {
-// 		drawerLockMode
-// 	};
-// };
-
-// const SettingsStack = createStackNavigator({
-// 	SettingsView,
-// 	LanguageView
-// }, {
-// 	defaultNavigationOptions: defaultHeader
-// });
-
-// const AdminPanelStack = createStackNavigator({
-// 	AdminPanelView
-// }, {
-// 	defaultNavigationOptions: defaultHeader
-// });
-
-// SettingsStack.navigationOptions = ({ navigation }) => {
-// 	let drawerLockMode = 'unlocked';
-// 	if (navigation.state.index > 0) {
-// 		drawerLockMode = 'locked-closed';
-// 	}
-// 	return {
-// 		drawerLockMode
-// 	};
-// };
-
 const ChatsDrawer = createDrawerNavigator({
 	ChatsStack
-	// ProfileStack,
-	// SettingsStack,
-	// AdminPanelStack
 }, {
 	contentComponent: Sidebar
 });
@@ -222,6 +152,7 @@ class CustomInsideStack extends React.Component {
 const App = createAppContainer(createSwitchNavigator(
 	{
 		OutsideStack: OAuthStack,
+		LogoutStack,
 		InsideStack: CustomInsideStack,
 		AuthLoading: AuthLoadingView,
 		SetUsernameStack

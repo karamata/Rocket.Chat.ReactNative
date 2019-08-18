@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import { WebView } from 'react-native-webview';
 import { connect } from 'react-redux';
 import { ActivityIndicator, StyleSheet } from 'react-native';
-import URI from 'urijs';
-import { Base64 } from 'js-base64';
 
-import RocketChat from '../lib/rocketchat';
 import { isIOS } from '../utils/deviceInfo';
 import StatusBar from '../containers/StatusBar';
 import { appInit } from '../actions';
@@ -47,7 +44,6 @@ export default class LogoutView extends React.PureComponent {
 	constructor(props) {
 		super(props);
 		this.state = {
-			logging: false,
 			loading: false
 		};
 		this.redirectRegex = new RegExp(`(?=.*(${ props.server }))(?=.*(credentialToken))(?=.*(credentialSecret))`, 'g');
@@ -58,22 +54,11 @@ export default class LogoutView extends React.PureComponent {
 		navigation.pop();
 	}
 
-	login = async(params) => {
-		const { logging } = this.state;
-		if (logging) {
-			return;
-		}
-
-		this.setState({ logging: true });
-
-		try {
-			await RocketChat.loginOAuth(params);
-		} catch (e) {
-			console.warn(e);
-		}
-		this.setState({ logging: false });
-		this.dismiss();
-	}
+	sleep = time => new Promise((resolve) => {
+		setTimeout(() => {
+			resolve();
+		}, time);
+	})
 
 	render() {
 		const { navigation } = this.props;
@@ -86,30 +71,18 @@ export default class LogoutView extends React.PureComponent {
 					useWebKit
 					source={{ uri: logoutUrl }}
 					userAgent={userAgent}
-					onNavigationStateChange={(webViewState) => {
-						const urlObject = URI.parse(webViewState.url);
-						const queryObject = URI.parseQuery(urlObject.query);
-						const stateObj = JSON.parse(Base64.decode(queryObject.state));
-
-						if (stateObj.action === 'login') {
-							const url = decodeURIComponent(webViewState.url);
-							if (this.redirectRegex.test(url)) {
-								const parts = url.split('#');
-								const credentials = JSON.parse(parts[1]);
-								this.login({ oauth: { ...credentials } });
-							}
-						} else if (stateObj.action === 'logout') {
-							this.dismiss();
-							// eslint-disable-next-line react/destructuring-assignment
-							this.props.appInit();
-						}
+					// eslint-disable-next-line
+					onNavigationStateChange={async (webViewState) => {
+						await this.sleep(1000);
+						this.dismiss();
+						// eslint-disable-next-line react/destructuring-assignment
+						this.props.appInit();
 					}}
 					onLoadStart={() => {
 						this.setState({ loading: true });
 					}}
-
 					onLoadEnd={() => {
-						this.setState({ loading: false });
+						// this.setState({ loading: true });
 					}}
 				/>
 				{ loading ? <ActivityIndicator size='large' style={styles.loading} /> : null }

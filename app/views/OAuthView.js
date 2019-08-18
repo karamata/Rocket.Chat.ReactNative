@@ -76,7 +76,7 @@ export default class OAuthView extends React.PureComponent {
 		const { navigation } = this.props;
 		const { loading } = this.state;
 		const oAuthUrl = navigation.getParam('oAuthUrl');
-		console.log('>>>>>>>>> ', oAuthUrl);
+		console.log('is running into this?', oAuthUrl);
 		return (
 			<React.Fragment>
 				<StatusBar />
@@ -95,7 +95,6 @@ export default class OAuthView extends React.PureComponent {
 					onLoadStart={() => {
 						this.setState({ loading: true });
 					}}
-
 					onLoadEnd={() => {
 						this.setState({ loading: false });
 					}}
