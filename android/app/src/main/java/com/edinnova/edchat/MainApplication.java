@@ -36,7 +36,7 @@ import io.realm.react.RealmReactPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 import chat.rocket.SharePackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
-
+import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
 import com.edinnova.edchat.generated.BasePackageList;
 
 import org.unimodules.adapters.react.ModuleRegistryAdapter;
@@ -63,16 +63,17 @@ public class MainApplication extends Application implements ReactApplication, IN
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new DocumentPickerPackage(),
-            new RNFirebasePackage(),
-            new RNFirebaseCrashlyticsPackage(),
-            new RNFirebaseAnalyticsPackage(),
-            new RNFirebasePerformancePackage(),
-            new RNCWebViewPackage(),
-            new OrientationPackage(),
-            new SplashScreenReactPackage(),
-            new SharePackage(),
-            new RNFetchBlobPackage(),
+          new DocumentPickerPackage(),
+          new RNFirebasePackage(),
+          new RNFirebaseCrashlyticsPackage(),
+          new RNFirebaseAnalyticsPackage(),
+          new RNFirebasePerformancePackage(),
+          new RNCWebViewPackage(),
+          new OrientationPackage(),
+          new SplashScreenReactPackage(),
+          new SharePackage(),
+          new RNFetchBlobPackage(),
+          new RNI18nPackage(),
 		  		new RNGestureHandlerPackage(),
 					new RNScreensPackage(),
 					new ActionSheetPackage(),
