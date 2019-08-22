@@ -110,7 +110,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode VERSIONCODE as Integer
-        versionName "1.17.0"
+        versionName "0.0.1"
         vectorDrawables.useSupportLibrary = true
     }
 
@@ -158,23 +158,11 @@ android {
         }
     }
 
-    bundle {
-        language {
-            enableSplit = false
-        }
-        density {
-            enableSplit = true
-        }
-        abi {
-            enableSplit = true
-        }
-    }
 }
 
 dependencies {
     addUnimodulesDependencies()
     implementation "org.webkit:android-jsc:r241213"
-    implementation project(':rn-extensions-share')
     implementation project(':rn-fetch-blob')
     implementation project(':react-native-document-picker')
     implementation project(':react-native-firebase')
