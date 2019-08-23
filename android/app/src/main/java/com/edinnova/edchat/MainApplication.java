@@ -34,7 +34,6 @@ import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.actionsheet.ActionSheetPackage;
 import io.realm.react.RealmReactPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
-import chat.rocket.SharePackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
 import com.edinnova.edchat.generated.BasePackageList;
@@ -71,7 +70,6 @@ public class MainApplication extends Application implements ReactApplication, IN
           new RNCWebViewPackage(),
           new OrientationPackage(),
           new SplashScreenReactPackage(),
-          new SharePackage(),
           new RNFetchBlobPackage(),
           new RNI18nPackage(),
 		  		new RNGestureHandlerPackage(),
