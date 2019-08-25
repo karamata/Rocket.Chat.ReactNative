@@ -5,7 +5,6 @@ import {
 import { Provider } from 'react-redux';
 import { useScreens } from 'react-native-screens'; // eslint-disable-line import/no-unresolved
 import { Linking } from 'react-native';
-import firebase from 'react-native-firebase';
 import PropTypes from 'prop-types';
 
 import { appInit } from './actions';
@@ -36,6 +35,7 @@ import parseQuery from './lib/methods/helpers/parseQuery';
 import { initializePushNotifications, onNotification } from './notifications/push';
 import store from './lib/createStore';
 import NotificationBadge from './notifications/inApp';
+import { onNavigationStateChange } from './utils/navigation';
 
 useScreens();
 
@@ -161,28 +161,6 @@ const App = createAppContainer(createSwitchNavigator(
 		initialRouteName: 'AuthLoading'
 	}
 ));
-
-// gets the current screen from navigation state
-const getActiveRouteName = (navigationState) => {
-	if (!navigationState) {
-		return null;
-	}
-	const route = navigationState.routes[navigationState.index];
-	// dive into nested navigators
-	if (route.routes) {
-		return getActiveRouteName(route);
-	}
-	return route.routeName;
-};
-
-const onNavigationStateChange = (prevState, currentState) => {
-	const currentScreen = getActiveRouteName(currentState);
-	const prevScreen = getActiveRouteName(prevState);
-
-	if (prevScreen !== currentScreen) {
-		firebase.analytics().setCurrentScreen(currentScreen);
-	}
-};
 
 export default class Root extends React.Component {
 	constructor(props) {
