@@ -622,7 +622,7 @@
 		50B452735FF53114E3E68DC884D120ED /* decorator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E37EFF92224DF321AC7E9243E67EBB1 /* decorator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		50DA1E0908FA789DAFF1E7AD685BDCD9 /* FIRComponentContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = D590E40941F1333F0D46B505D9D3381F /* FIRComponentContainer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		50E573114AF3CF478624DB7200A00789 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FDC4098090BCA89BB128C11684FB85 /* NSData+ImageContentType.m */; };
-		5124B14EEB6ADB70BD923A4B4E7AD798 /* Pods-RocketChatRN-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 133D81C69EE4A8C014E0D2D3D6ADBDC6 /* Pods-RocketChatRN-dummy.m */; };
+		5124B14EEB6ADB70BD923A4B4E7AD798 /* Pods-EdChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 133D81C69EE4A8C014E0D2D3D6ADBDC6 /* Pods-EdChat-dummy.m */; };
 		51D2E6B7B228FD5D69C2960376F50D57 /* ReactMarker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB4057AD7142FA6745DDFB2047E2C5E3 /* ReactMarker.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
 		51F232A4FD71B680BAA30AF1D92A9EF2 /* RNNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 540F489930ACAE6507262CBA660A60CD /* RNNotificationCenter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5224B1E49277626FA2A9BC8D8673277D /* vp8li_dec.h in Headers */ = {isa = PBXBuildFile; fileRef = F265EB84BEFA0C02FDB805FF9074BCF8 /* vp8li_dec.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -655,7 +655,7 @@
 		55F35A739A6484C597F6EB6280C1193A /* RCTAnimationDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B67E4BDF053E6518E10103DB3BF0FE /* RCTAnimationDriver.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		561132E617F63B3AF7F8BB23C1A0BE4B /* RCTDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 357EE41B4132517E3C5A6D7D8B8A17EA /* RCTDisplayLink.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		56A73B25EAFD4776904050F3BFCC7D08 /* SDImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = A32953F955579E837338E27C7051A31E /* SDImageLoader.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		56C32A04594FC811CA53035354C958CD /* Pods-ShareRocketChatRN-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D36A7DBB1CAA328D188048E619B5A1EE /* Pods-ShareRocketChatRN-dummy.m */; };
+		56C32A04594FC811CA53035354C958CD /* Pods-ShareEdChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D36A7DBB1CAA328D188048E619B5A1EE /* Pods-ShareEdChat-dummy.m */; };
 		56C66F08B5B515B3C3FFB696B9E4878E /* RCTSafeAreaViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 47BEDA20119FFBAC6F0C0C1D2E1C447A /* RCTSafeAreaViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		56E351FA21529A408DB7A033865E0C6B /* RNGestureHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EAC8BD22A2982BBB4AAAD00DB73A272 /* RNGestureHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		56FB73132B5C325C1EE6E9067CF6EC3F /* upsampling_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = C47608DCC0C80820CFE8A9B2DA2ED22C /* upsampling_neon.c */; settings = {COMPILER_FLAGS = "-D_THREAD_SAFE -fno-objc-arc"; }; };
@@ -3390,7 +3390,7 @@
 		12B132F0B539FD599F47756CE6CFF272 /* RCTSRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSRWebSocket.h; sourceTree = "<group>"; };
 		12B6FE955DAFF4C7DBAEF58F2ADF4CE9 /* FIRInstanceIDCheckinStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstanceIDCheckinStore.m; path = Firebase/InstanceID/FIRInstanceIDCheckinStore.m; sourceTree = "<group>"; };
 		12F9D5ADBA42BFAEFC1CF9EB1CE0A335 /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
-		133D81C69EE4A8C014E0D2D3D6ADBDC6 /* Pods-RocketChatRN-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RocketChatRN-dummy.m"; sourceTree = "<group>"; };
+		133D81C69EE4A8C014E0D2D3D6ADBDC6 /* Pods-EdChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EdChat-dummy.m"; sourceTree = "<group>"; };
 		137AB61F0D545D65C591170A755919B3 /* libFolly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFolly.a; path = libFolly.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C08E46D4AD0D71FC6C6693B9253C75 /* RCTDevSettings.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTDevSettings.mm; sourceTree = "<group>"; };
 		13D99DBC80BEF10AA0B3239F52637EE0 /* QBImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBImagePickerController.m; path = QBImagePicker/QBImagePickerController.m; sourceTree = "<group>"; };
@@ -3409,7 +3409,7 @@
 		15AD39715981382DACC8ED4B21B49F80 /* RCTRefreshControlManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRefreshControlManager.h; sourceTree = "<group>"; };
 		15D0933AEF222B9CEC60F893235E2362 /* alpha_processing_mips_dsp_r2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = alpha_processing_mips_dsp_r2.c; path = src/dsp/alpha_processing_mips_dsp_r2.c; sourceTree = "<group>"; };
 		15F7A763771471383D4666FBB10B57E8 /* FIRInstanceIDAPNSInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstanceIDAPNSInfo.m; path = Firebase/InstanceID/FIRInstanceIDAPNSInfo.m; sourceTree = "<group>"; };
-		16041806BB25EFFDD8A4E9B59E59DD00 /* libPods-RocketChatRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RocketChatRN.a"; path = "libPods-RocketChatRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16041806BB25EFFDD8A4E9B59E59DD00 /* libPods-EdChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-EdChat.a"; path = "libPods-EdChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		160563001E5CABCEE06C3D178C0F8911 /* RCTNativeAnimatedNodesManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTNativeAnimatedNodesManager.m; sourceTree = "<group>"; };
 		160A17241043F0168EB3572DEA68C50F /* RCTLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTLayout.m; sourceTree = "<group>"; };
 		1630C8B1789E2A724430A42F8F08D091 /* RCTTouchEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTouchEvent.m; sourceTree = "<group>"; };
@@ -3446,7 +3446,7 @@
 		1ACF506A2AC08F3332624291BC4E7BA4 /* UMNativeModulesProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMNativeModulesProxy.h; sourceTree = "<group>"; };
 		1B083D62BEA49EF2CBD59BF9400BB3F4 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = QBImagePicker/es.lproj; sourceTree = "<group>"; };
 		1B29988F9F31773EB2B38DD75367F065 /* vlog_is_on.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = vlog_is_on.cc; path = src/vlog_is_on.cc; sourceTree = "<group>"; };
-		1B6AF5E20CB5B9563AC579F8BDD184D5 /* Pods-RocketChatRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RocketChatRN.release.xcconfig"; sourceTree = "<group>"; };
+		1B6AF5E20CB5B9563AC579F8BDD184D5 /* Pods-EdChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EdChat.release.xcconfig"; sourceTree = "<group>"; };
 		1B6C37160489F937FD5EDC1C8B72478A /* RCTUITextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUITextField.m; sourceTree = "<group>"; };
 		1B7EC0AA32B06D1369FA20D2167228CB /* huffman_encode_utils.c */ = {isa = PBXFileReference; includeInIndex = 1; name = huffman_encode_utils.c; path = src/utils/huffman_encode_utils.c; sourceTree = "<group>"; };
 		1BA337F6A76C4F03C56C6F520899E986 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome5_Brands.ttf; path = Fonts/FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
@@ -3529,7 +3529,7 @@
 		28B2AA8C803927C3EB22AB2C67AF649D /* EXAppLoaderProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXAppLoaderProvider.m; path = EXAppLoaderProvider/EXAppLoaderProvider.m; sourceTree = "<group>"; };
 		28B4FCE7B0E15169C083DE952CF510D6 /* ColdClass.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ColdClass.cpp; path = folly/lang/ColdClass.cpp; sourceTree = "<group>"; };
 		28B9E770D1EB1F6CEAB860B3A1F6B89F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		28EC3C01032D02EAFE02322B0CB3FC71 /* Pods-RocketChatRN-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RocketChatRN-resources.sh"; sourceTree = "<group>"; };
+		28EC3C01032D02EAFE02322B0CB3FC71 /* Pods-EdChat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EdChat-resources.sh"; sourceTree = "<group>"; };
 		28F287315BFE1861AA0A1E3169EAD659 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		2900C570963EA3CDCFE3CF6D445C607A /* react-native-splash-screen-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-splash-screen-prefix.pch"; sourceTree = "<group>"; };
 		290AD0821DBF6EFAE34219A26819C3AF /* EXContactsRequester.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXContactsRequester.h; path = EXPermissions/EXContactsRequester.h; sourceTree = "<group>"; };
@@ -3884,7 +3884,7 @@
 		5C394FB04DE2AEB63478F51008C2813B /* UMKernelService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMKernelService.h; sourceTree = "<group>"; };
 		5C4CC5C2B22ED14AD4DCD7309F0DFB04 /* FIRInstanceIDStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstanceIDStore.m; path = Firebase/InstanceID/FIRInstanceIDStore.m; sourceTree = "<group>"; };
 		5C725620571E415D0203B06D05A8CBE4 /* NativeToJsBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NativeToJsBridge.h; sourceTree = "<group>"; };
-		5C8974C8E1A0C09C0F6D32AEFA43597D /* Pods-ShareRocketChatRN-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShareRocketChatRN-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C8974C8E1A0C09C0F6D32AEFA43597D /* Pods-ShareEdChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShareEdChat-acknowledgements.plist"; sourceTree = "<group>"; };
 		5C9ED3469B4E6F6742057211314C3808 /* RCTBlobCollector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBlobCollector.h; sourceTree = "<group>"; };
 		5CAD801C9E7D6BE1128FC761C2A1441C /* UIView+FindUIViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FindUIViewController.h"; path = "ios/Video/UIView+FindUIViewController.h"; sourceTree = "<group>"; };
 		5CB41E1576D4AEF36B226DCFF55D111A /* FIRVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVersion.m; path = Firebase/Core/FIRVersion.m; sourceTree = "<group>"; };
@@ -3933,7 +3933,7 @@
 		6240C031441A437D82A8593FA4E032FB /* Orientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Orientation.m; path = iOS/RCTOrientation/Orientation.m; sourceTree = "<group>"; };
 		628462E2228FD4B6B89518A71C5ED210 /* JsArgumentHelpers-inl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JsArgumentHelpers-inl.h"; sourceTree = "<group>"; };
 		6290E0B9C58B8E4B25BC9EEB454B6500 /* RNFirebaseDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNFirebaseDatabase.h; sourceTree = "<group>"; };
-		6299B07F20A050CCA97459DE44CE30E6 /* Pods-ShareRocketChatRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareRocketChatRN.debug.xcconfig"; sourceTree = "<group>"; };
+		6299B07F20A050CCA97459DE44CE30E6 /* Pods-ShareEdChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareEdChat.debug.xcconfig"; sourceTree = "<group>"; };
 		629DAA9DC761BB7B652894B116E998BB /* libReact-RCTAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libReact-RCTAnimation.a"; path = "libReact-RCTAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AA51F08101F513DAD436470ED83D2D /* EXConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXConstants.h; path = EXConstants/EXConstants.h; sourceTree = "<group>"; };
 		62E9D8875B0A25B7723529B395B144BF /* RNCWKWebViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCWKWebViewManager.m; path = ios/RNCWKWebViewManager.m; sourceTree = "<group>"; };
@@ -4109,7 +4109,7 @@
 		7C191821A9EE5E3721C2AA4B7A2A228B /* libRNImageCropPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRNImageCropPicker.a; path = libRNImageCropPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C198EF1AA835FC388A9F9A17B576207 /* RCTVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTVersion.h; sourceTree = "<group>"; };
 		7C326906E276B27CF1DD3526B310C168 /* ResourceBundle-QBImagePicker-QBImagePickerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-QBImagePicker-QBImagePickerController-Info.plist"; sourceTree = "<group>"; };
-		7C6A7F35A722F51724595F8DFE814079 /* Pods-RocketChatRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RocketChatRN.debug.xcconfig"; sourceTree = "<group>"; };
+		7C6A7F35A722F51724595F8DFE814079 /* Pods-EdChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EdChat.debug.xcconfig"; sourceTree = "<group>"; };
 		7C876AF74DFC58BE71EFE606BB06A820 /* react-native-keyboard-tracking-view.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-keyboard-tracking-view.xcconfig"; sourceTree = "<group>"; };
 		7C9E81376861EEBA8429FFFDE2F87FEF /* RCTInputAccessoryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTInputAccessoryView.h; sourceTree = "<group>"; };
 		7D49F235A52C22D3E6A86A3DBEE26396 /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
@@ -4227,7 +4227,7 @@
 		8DF4BDB64CE29BF93004D54AEADB9976 /* RNBridgeModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNBridgeModule.m; path = RNNotifications/RNBridgeModule.m; sourceTree = "<group>"; };
 		8E1F004E54F8AF472D3101083A19C997 /* React-jsi.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "React-jsi.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8E2AB0B8C9D117A386980494E4B3340B /* RNCWKProcessPoolManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCWKProcessPoolManager.m; path = ios/RNCWKProcessPoolManager.m; sourceTree = "<group>"; };
-		8E6A56450A8AF738EFD0534FD77B934D /* Pods-ShareRocketChatRN-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShareRocketChatRN-resources.sh"; sourceTree = "<group>"; };
+		8E6A56450A8AF738EFD0534FD77B934D /* Pods-ShareEdChat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShareEdChat-resources.sh"; sourceTree = "<group>"; };
 		8E95C17BB0ECECA8958001050E5D2F5F /* UMMagnetometerInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMMagnetometerInterface.h; path = UMSensorsInterface/UMMagnetometerInterface.h; sourceTree = "<group>"; };
 		8EAB0B75A5213141CCF7DC24A03F987F /* RCTRootContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRootContentView.m; sourceTree = "<group>"; };
 		8EC2007B682758245032769314542E54 /* UMModuleRegistryAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMModuleRegistryAdapter.h; sourceTree = "<group>"; };
@@ -4564,7 +4564,7 @@
 		C0BE24B17E7BAED38D39126B63220F6F /* SDAnimatedImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SDAnimatedImageView+WebCache.h"; path = "SDWebImage/SDAnimatedImageView+WebCache.h"; sourceTree = "<group>"; };
 		C0CC53EB601179C3142F6847F595DD00 /* RCTRefreshControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRefreshControl.m; sourceTree = "<group>"; };
 		C0FDC4098090BCA89BB128C11684FB85 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
-		C10B55917E78E59A3FE6D2B4762CEACD /* Pods-ShareRocketChatRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareRocketChatRN.release.xcconfig"; sourceTree = "<group>"; };
+		C10B55917E78E59A3FE6D2B4762CEACD /* Pods-ShareEdChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShareEdChat.release.xcconfig"; sourceTree = "<group>"; };
 		C10F8D27E730C2776E71C362E1A4FE45 /* UMImageLoaderInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMImageLoaderInterface.h; path = UMImageLoaderInterface/UMImageLoaderInterface.h; sourceTree = "<group>"; };
 		C11E01E62BCBA50FE9818EA691DE6875 /* RCTFileReaderModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFileReaderModule.h; sourceTree = "<group>"; };
 		C12443FF09300FE27D9B06FC2A10ED2B /* dec_mips_dsp_r2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dec_mips_dsp_r2.c; path = src/dsp/dec_mips_dsp_r2.c; sourceTree = "<group>"; };
@@ -4685,7 +4685,7 @@
 		D2C00A723DDB533A46756978C839414F /* rescaler.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rescaler.c; path = src/dsp/rescaler.c; sourceTree = "<group>"; };
 		D2D3A12F5CB899D264C3D5F1B602F87B /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = SimpleLineIcons.ttf; path = Fonts/SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		D31CA7143A73D81AC402696A5725265F /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
-		D36A7DBB1CAA328D188048E619B5A1EE /* Pods-ShareRocketChatRN-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShareRocketChatRN-dummy.m"; sourceTree = "<group>"; };
+		D36A7DBB1CAA328D188048E619B5A1EE /* Pods-ShareEdChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShareEdChat-dummy.m"; sourceTree = "<group>"; };
 		D37035A626F48FDE57928AE6C53769C6 /* anim_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; name = anim_encode.c; path = src/mux/anim_encode.c; sourceTree = "<group>"; };
 		D3A6288D2775AD464B01CBCD0FEB1D1D /* RNFirebaseDatabaseReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNFirebaseDatabaseReference.h; sourceTree = "<group>"; };
 		D3AD8DA41519F9991DA3BBB397E53C2C /* RCTInspector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTInspector.h; sourceTree = "<group>"; };
@@ -4841,8 +4841,8 @@
 		EA322F0F493D263FA4EEA9F80E6C3276 /* RCTImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTImageView.m; sourceTree = "<group>"; };
 		EA38A3FE08E1CCB87BBF88C726C857C4 /* RNDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNDeviceInfo.h; path = ios/RNDeviceInfo/RNDeviceInfo.h; sourceTree = "<group>"; };
 		EA3CE3A9518AE7FD65BFCF713A43EC80 /* RCTNativeAnimatedModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTNativeAnimatedModule.h; sourceTree = "<group>"; };
-		EA6877812ACC5E84E4F624F54913161A /* Pods-RocketChatRN-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RocketChatRN-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EA72252935779996212AA0252AA8DD4F /* Pods-ShareRocketChatRN-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShareRocketChatRN-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EA6877812ACC5E84E4F624F54913161A /* Pods-EdChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EdChat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EA72252935779996212AA0252AA8DD4F /* Pods-ShareEdChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShareEdChat-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EA887C26BFCAC6B2AEC4331F194C624A /* FIRInstanceIDAuthKeyChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceIDAuthKeyChain.h; path = Firebase/InstanceID/FIRInstanceIDAuthKeyChain.h; sourceTree = "<group>"; };
 		EA92D52D74E2AC15A87A4452E6C88D7C /* libReact-RCTText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libReact-RCTText.a"; path = "libReact-RCTText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA43BEF56DD7BC710B980846A10906B /* huffman_utils.c */ = {isa = PBXFileReference; includeInIndex = 1; name = huffman_utils.c; path = src/utils/huffman_utils.c; sourceTree = "<group>"; };
@@ -4864,7 +4864,7 @@
 		ED3A529BE56491A3C4A40A7143854717 /* strtod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = strtod.h; path = "double-conversion/strtod.h"; sourceTree = "<group>"; };
 		ED6692DC75AA156ECFD4721341737874 /* RCTHTTPRequestHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTHTTPRequestHandler.mm; sourceTree = "<group>"; };
 		EDC6CA9F78F63178EB18CE249EB86A4D /* RCTCxxBridgeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTCxxBridgeDelegate.h; sourceTree = "<group>"; };
-		EDC92688860036102724512498E31246 /* libPods-ShareRocketChatRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ShareRocketChatRN.a"; path = "libPods-ShareRocketChatRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC92688860036102724512498E31246 /* libPods-ShareEdChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ShareEdChat.a"; path = "libPods-ShareEdChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE06ECA289582B4F447C247455A80667 /* SDImageLoadersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoadersManager.m; path = SDWebImage/SDImageLoadersManager.m; sourceTree = "<group>"; };
 		EEBBBF80DACBA4FF35F5B1F724CBA14D /* RNFirebaseFirestoreCollectionReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNFirebaseFirestoreCollectionReference.h; sourceTree = "<group>"; };
 		EEC2506526D42F4D757B7334B29F8232 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
@@ -4913,7 +4913,7 @@
 		F34C5DA93FFCFBD53ED5BA4E500C577B /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		F37BA73CB991F4AB78059D0E253532CF /* RCTMultilineTextInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMultilineTextInputView.h; sourceTree = "<group>"; };
 		F3C27E25275D80E37DC73E298759FAC0 /* utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utils.h; path = src/utils/utils.h; sourceTree = "<group>"; };
-		F3C5076ADBAB787FE62AC09CB44B4A9C /* Pods-RocketChatRN-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RocketChatRN-acknowledgements.plist"; sourceTree = "<group>"; };
+		F3C5076ADBAB787FE62AC09CB44B4A9C /* Pods-EdChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EdChat-acknowledgements.plist"; sourceTree = "<group>"; };
 		F40855544E8A37155832F7524CEBF0EC /* RNCWKWebViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCWKWebViewManager.h; path = ios/RNCWKWebViewManager.h; sourceTree = "<group>"; };
 		F436599BA8D1262BE178FD3A44AC9117 /* RNFetchBlobReqBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNFetchBlobReqBuilder.h; path = ios/RNFetchBlobReqBuilder.h; sourceTree = "<group>"; };
 		F4769E682BBAD42859082B1AECB1F484 /* Unicode.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Unicode.cpp; path = folly/Unicode.cpp; sourceTree = "<group>"; };
@@ -5526,8 +5526,8 @@
 		06D60C769F7D115AFAD59B48B3198638 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C88EDD29BF2A48FD670F2B85B452AB84 /* Pods-RocketChatRN */,
-				FDA4FF407DB01D9E34F81999653B3E2E /* Pods-ShareRocketChatRN */,
+				C88EDD29BF2A48FD670F2B85B452AB84 /* Pods-EdChat */,
+				FDA4FF407DB01D9E34F81999653B3E2E /* Pods-ShareEdChat */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -8912,18 +8912,18 @@
 			path = "../../../../ios/Pods/Target Support Files/React-jsiexecutor";
 			sourceTree = "<group>";
 		};
-		C88EDD29BF2A48FD670F2B85B452AB84 /* Pods-RocketChatRN */ = {
+		C88EDD29BF2A48FD670F2B85B452AB84 /* Pods-EdChat */ = {
 			isa = PBXGroup;
 			children = (
-				EA6877812ACC5E84E4F624F54913161A /* Pods-RocketChatRN-acknowledgements.markdown */,
-				F3C5076ADBAB787FE62AC09CB44B4A9C /* Pods-RocketChatRN-acknowledgements.plist */,
-				133D81C69EE4A8C014E0D2D3D6ADBDC6 /* Pods-RocketChatRN-dummy.m */,
-				28EC3C01032D02EAFE02322B0CB3FC71 /* Pods-RocketChatRN-resources.sh */,
-				7C6A7F35A722F51724595F8DFE814079 /* Pods-RocketChatRN.debug.xcconfig */,
-				1B6AF5E20CB5B9563AC579F8BDD184D5 /* Pods-RocketChatRN.release.xcconfig */,
+				EA6877812ACC5E84E4F624F54913161A /* Pods-EdChat-acknowledgements.markdown */,
+				F3C5076ADBAB787FE62AC09CB44B4A9C /* Pods-EdChat-acknowledgements.plist */,
+				133D81C69EE4A8C014E0D2D3D6ADBDC6 /* Pods-EdChat-dummy.m */,
+				28EC3C01032D02EAFE02322B0CB3FC71 /* Pods-EdChat-resources.sh */,
+				7C6A7F35A722F51724595F8DFE814079 /* Pods-EdChat.debug.xcconfig */,
+				1B6AF5E20CB5B9563AC579F8BDD184D5 /* Pods-EdChat.release.xcconfig */,
 			);
-			name = "Pods-RocketChatRN";
-			path = "Target Support Files/Pods-RocketChatRN";
+			name = "Pods-EdChat";
+			path = "Target Support Files/Pods-EdChat";
 			sourceTree = "<group>";
 		};
 		C93C48C85E29E96AB409BA26CAC5B86F /* Support Files */ = {
@@ -9290,8 +9290,8 @@
 				C6C1EA095F7FB5911B6FD5AE87175E70 /* libGoogleUtilities.a */,
 				4C4775A7B5BD226BFBE8550AE94C10D1 /* liblibwebp.a */,
 				7EEA2E196C8C72645E6611C2BDE6A1FC /* libnanopb.a */,
-				16041806BB25EFFDD8A4E9B59E59DD00 /* libPods-RocketChatRN.a */,
-				EDC92688860036102724512498E31246 /* libPods-ShareRocketChatRN.a */,
+				16041806BB25EFFDD8A4E9B59E59DD00 /* libPods-EdChat.a */,
+				EDC92688860036102724512498E31246 /* libPods-ShareEdChat.a */,
 				F12CB860D6B6425550D42966D40C55E8 /* libQBImagePickerController.a */,
 				EFE9E20E5CAA2BC84B6C06D3BE4A7506 /* libReact-Core.a */,
 				CC2B46E71144CD98FCECD5568AD76399 /* libReact-cxxreact.a */,
@@ -9699,18 +9699,18 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		FDA4FF407DB01D9E34F81999653B3E2E /* Pods-ShareRocketChatRN */ = {
+		FDA4FF407DB01D9E34F81999653B3E2E /* Pods-ShareEdChat */ = {
 			isa = PBXGroup;
 			children = (
-				EA72252935779996212AA0252AA8DD4F /* Pods-ShareRocketChatRN-acknowledgements.markdown */,
-				5C8974C8E1A0C09C0F6D32AEFA43597D /* Pods-ShareRocketChatRN-acknowledgements.plist */,
-				D36A7DBB1CAA328D188048E619B5A1EE /* Pods-ShareRocketChatRN-dummy.m */,
-				8E6A56450A8AF738EFD0534FD77B934D /* Pods-ShareRocketChatRN-resources.sh */,
-				6299B07F20A050CCA97459DE44CE30E6 /* Pods-ShareRocketChatRN.debug.xcconfig */,
-				C10B55917E78E59A3FE6D2B4762CEACD /* Pods-ShareRocketChatRN.release.xcconfig */,
+				EA72252935779996212AA0252AA8DD4F /* Pods-ShareEdChat-acknowledgements.markdown */,
+				5C8974C8E1A0C09C0F6D32AEFA43597D /* Pods-ShareEdChat-acknowledgements.plist */,
+				D36A7DBB1CAA328D188048E619B5A1EE /* Pods-ShareEdChat-dummy.m */,
+				8E6A56450A8AF738EFD0534FD77B934D /* Pods-ShareEdChat-resources.sh */,
+				6299B07F20A050CCA97459DE44CE30E6 /* Pods-ShareEdChat.debug.xcconfig */,
+				C10B55917E78E59A3FE6D2B4762CEACD /* Pods-ShareEdChat.release.xcconfig */,
 			);
-			name = "Pods-ShareRocketChatRN";
-			path = "Target Support Files/Pods-ShareRocketChatRN";
+			name = "Pods-ShareEdChat";
+			path = "Target Support Files/Pods-ShareEdChat";
 			sourceTree = "<group>";
 		};
 		FDB28F32DF57E025B3CD69966A674316 /* EXPermissions */ = {
@@ -11052,9 +11052,9 @@
 			productReference = A7D64589B1B0026CEB6AB90B75153AB2 /* libEXConstants.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		32A3B35D930A76BB20877855518F43C7 /* Pods-RocketChatRN */ = {
+		32A3B35D930A76BB20877855518F43C7 /* Pods-EdChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4FB2E2B50346248EB9BC41F14A9C1B2 /* Build configuration list for PBXNativeTarget "Pods-RocketChatRN" */;
+			buildConfigurationList = F4FB2E2B50346248EB9BC41F14A9C1B2 /* Build configuration list for PBXNativeTarget "Pods-EdChat" */;
 			buildPhases = (
 				1020942D13802EA71648A713C7EDB57E /* Headers */,
 				8CB37745C37DAE5D3075F43E639E84D2 /* Sources */,
@@ -11140,9 +11140,9 @@
 				392148F8929B9CE4EE16096168F2067B /* PBXTargetDependency */,
 				DB8FF1C92E8075428449CA5334528C17 /* PBXTargetDependency */,
 			);
-			name = "Pods-RocketChatRN";
-			productName = "Pods-RocketChatRN";
-			productReference = 16041806BB25EFFDD8A4E9B59E59DD00 /* libPods-RocketChatRN.a */;
+			name = "Pods-EdChat";
+			productName = "Pods-EdChat";
+			productReference = 16041806BB25EFFDD8A4E9B59E59DD00 /* libPods-EdChat.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		3A15CD84BD492426DC82F44685C9083B /* React-cxxreact */ = {
@@ -11468,9 +11468,9 @@
 			productReference = 95D3773507D3BF04795090830DCF7179 /* librn-fetch-blob.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		75D8F7D2C82DF708A04994DC005AD9A8 /* Pods-ShareRocketChatRN */ = {
+		75D8F7D2C82DF708A04994DC005AD9A8 /* Pods-ShareEdChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0DD71DEF9B191399C5FDABB550016ED /* Build configuration list for PBXNativeTarget "Pods-ShareRocketChatRN" */;
+			buildConfigurationList = D0DD71DEF9B191399C5FDABB550016ED /* Build configuration list for PBXNativeTarget "Pods-ShareEdChat" */;
 			buildPhases = (
 				F24819217D2ACBB8AA8D2459D53DED8A /* Headers */,
 				EBAC38786501014CC9672BE9C1A2BA3A /* Sources */,
@@ -11538,9 +11538,9 @@
 				3E5F9EFE83DC5A1F33BE06D6537F8522 /* PBXTargetDependency */,
 				208CA61EC0C7329DC7A3C0F060D8082A /* PBXTargetDependency */,
 			);
-			name = "Pods-ShareRocketChatRN";
-			productName = "Pods-ShareRocketChatRN";
-			productReference = EDC92688860036102724512498E31246 /* libPods-ShareRocketChatRN.a */;
+			name = "Pods-ShareEdChat";
+			productName = "Pods-ShareEdChat";
+			productReference = EDC92688860036102724512498E31246 /* libPods-ShareEdChat.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7651863001A946A72D0A291B4571C795 /* React-fishhook */ = {
@@ -12164,8 +12164,8 @@
 				D9A2B7F6350AE8AB9AAFF5A9395AD63C /* GoogleUtilities */,
 				41A27ACB01F70C8C5C3ED9278AA25AF7 /* libwebp */,
 				E93C48A48FB03EA19C4F756B97B5F1D3 /* nanopb */,
-				32A3B35D930A76BB20877855518F43C7 /* Pods-RocketChatRN */,
-				75D8F7D2C82DF708A04994DC005AD9A8 /* Pods-ShareRocketChatRN */,
+				32A3B35D930A76BB20877855518F43C7 /* Pods-EdChat */,
+				75D8F7D2C82DF708A04994DC005AD9A8 /* Pods-ShareEdChat */,
 				8DE3C1ADCD852EBCEE604A558D45AA4C /* QBImagePickerController */,
 				9856D7AE82CF0E8587628DB4576F1654 /* QBImagePickerController-QBImagePicker */,
 				D3DE12AF8C9F3C31D803B2BFD4BC6F4F /* React */,
@@ -12936,7 +12936,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5124B14EEB6ADB70BD923A4B4E7AD798 /* Pods-RocketChatRN-dummy.m in Sources */,
+				5124B14EEB6ADB70BD923A4B4E7AD798 /* Pods-EdChat-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -13364,7 +13364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56C32A04594FC811CA53035354C958CD /* Pods-ShareRocketChatRN-dummy.m in Sources */,
+				56C32A04594FC811CA53035354C958CD /* Pods-ShareEdChat-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -15333,7 +15333,7 @@
 		};
 		1E16BDA54570E3F6537126D513E456A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B6AF5E20CB5B9563AC579F8BDD184D5 /* Pods-RocketChatRN.release.xcconfig */;
+			baseConfigurationReference = 1B6AF5E20CB5B9563AC579F8BDD184D5 /* Pods-EdChat.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -16675,7 +16675,7 @@
 		};
 		8E54D928FC11F5E0AC9C3DD28FD530C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C6A7F35A722F51724595F8DFE814079 /* Pods-RocketChatRN.debug.xcconfig */;
+			baseConfigurationReference = 7C6A7F35A722F51724595F8DFE814079 /* Pods-EdChat.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -16918,7 +16918,7 @@
 		};
 		9DDE90AE2C83CFBA8C363628139C3A3B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6299B07F20A050CCA97459DE44CE30E6 /* Pods-ShareRocketChatRN.debug.xcconfig */;
+			baseConfigurationReference = 6299B07F20A050CCA97459DE44CE30E6 /* Pods-ShareEdChat.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -17481,7 +17481,7 @@
 		};
 		CA3EACE9BEE51324014B6BA2F26672B5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C10B55917E78E59A3FE6D2B4762CEACD /* Pods-ShareRocketChatRN.release.xcconfig */;
+			baseConfigurationReference = C10B55917E78E59A3FE6D2B4762CEACD /* Pods-ShareEdChat.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = NO;
@@ -19091,7 +19091,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0DD71DEF9B191399C5FDABB550016ED /* Build configuration list for PBXNativeTarget "Pods-ShareRocketChatRN" */ = {
+		D0DD71DEF9B191399C5FDABB550016ED /* Build configuration list for PBXNativeTarget "Pods-ShareEdChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DDE90AE2C83CFBA8C363628139C3A3B /* Debug */,
@@ -19199,7 +19199,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4FB2E2B50346248EB9BC41F14A9C1B2 /* Build configuration list for PBXNativeTarget "Pods-RocketChatRN" */ = {
+		F4FB2E2B50346248EB9BC41F14A9C1B2 /* Build configuration list for PBXNativeTarget "Pods-EdChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E54D928FC11F5E0AC9C3DD28FD530C2 /* Debug */,
