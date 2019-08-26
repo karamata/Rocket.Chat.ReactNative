@@ -226,7 +226,7 @@ jobs:
       - run:
           name: Set Google Services
           command: |
-            cp GoogleService-Info.prod.plist GoogleService-Info.plist
+            cp GoogleService-Info.plist GoogleService-Info.plist
           working_directory: ios
 
       - run:

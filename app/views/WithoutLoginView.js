@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
 	}
 });
 
-export default class WithoutServerView extends React.Component {
+export default class WithoutLoginView extends React.Component {
 	static navigationOptions = () => ({
 		headerLeft: (
 			<CloseShareExtensionButton
@@ -43,8 +43,8 @@ export default class WithoutServerView extends React.Component {
 	render() {
 		return (
 			<View style={styles.container}>
-				<Text style={styles.title}>{I18n.t('Without_Servers')}</Text>
-				<Text style={styles.content}>{I18n.t('You_need_to_access_at_least_one_RocketChat_server_to_share_something')}</Text>
+				<Text style={styles.title}>{I18n.t('Without_Login')}</Text>
+				<Text style={styles.content}>{I18n.t('You_need_to_open_edchat_and_login')}</Text>
 			</View>
 		);
 	}

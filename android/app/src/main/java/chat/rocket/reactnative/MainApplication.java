@@ -1,4 +1,4 @@
-package chat.rocket.reactnative;
+package com.edinnova.edchat;
 
 import android.app.Application;
 import android.util.Log;
@@ -13,7 +13,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 
-import chat.rocket.reactnative.generated.BasePackageList;
+import com.edinnova.edchat.generated.BasePackageList;
 
 import org.unimodules.adapters.react.ModuleRegistryAdapter;
 import org.unimodules.adapters.react.ReactModuleRegistryProvider;

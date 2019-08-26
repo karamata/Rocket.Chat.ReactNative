@@ -112,22 +112,18 @@ const handleLogout = function* handleLogout() {
 	const services = yield select(getServices);
 	if (server && services) {
 		try {
-			console.log('>>>>>>>> error 1');
 			yield call(logoutCall, { server });
-			console.log('>>>>>>>> error 2');
 			const { serversDB } = database.databases;
-			console.log('>>>>>>>> error 3');
 			// all servers
 			const servers = yield serversDB.objects('servers');
-			console.log('>>>>>>>> error 4');
 			// filter logging out server and delete it
 			const serverRecord = servers.filtered('id = $0', server);
 			serversDB.write(() => {
 				serversDB.delete(serverRecord);
 			});
-			console.log('>>>>>>>> error 5');
 			// yield put(serverRequest(server));
 			// eslint-disable-next-line react/destructuring-assignment
+			console.log('xxxxxxxxxxxxxx  vvv', services.edinnova);
 			const endpoint = services.edinnova.logoutPath.startsWith('http') ? services.edinnova.logoutPath : `${ services.edinnova.serverURL }${ services.edinnova.logoutPath }`;
 			console.log('>>>>>>>> error 6 ');
 			// eslint-disable-next-line react/destructuring-assignment

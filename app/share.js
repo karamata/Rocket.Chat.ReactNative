@@ -4,6 +4,7 @@ import { createAppContainer, createStackNavigator, createSwitchNavigator } from 
 import { Provider } from 'react-redux';
 import RNUserDefaults from 'rn-user-defaults';
 
+import appConfig from '../app.json';
 import Navigation from './lib/ShareNavigation';
 import store from './lib/createStore';
 import sharedStyles from './views/Styles';
@@ -27,11 +28,11 @@ const InsideNavigator = createStackNavigator({
 });
 
 const OutsideNavigator = createStackNavigator({
-	WithoutServersView: {
-		getScreen: () => require('./views/WithoutServersView').default
+	WithoutLoginView: {
+		getScreen: () => require('./views/WithoutLoginView').default
 	}
 }, {
-	initialRouteName: 'WithoutServersView',
+	initialRouteName: 'WithoutLoginView',
 	defaultNavigationOptions: defaultHeader
 });
 
@@ -59,12 +60,11 @@ class Root extends React.Component {
 		if (isIOS) {
 			await RNUserDefaults.setName('group.ios.chat.edinnova.com');
 		}
-		const currentServer = await RNUserDefaults.get('currentServer');
 		const token = await RNUserDefaults.get(RocketChat.TOKEN_KEY);
 
-		if (currentServer && token) {
+		if (token) {
 			await Navigation.navigate('InsideStack');
-			await RocketChat.shareExtensionInit(currentServer);
+			await RocketChat.shareExtensionInit(appConfig.server);
 		} else {
 			await Navigation.navigate('OutsideStack');
 		}

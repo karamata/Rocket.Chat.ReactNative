@@ -1,6 +1,6 @@
-package chat.rocket.reactnative.share;
+package com.edinnova.edchat.share;
 
-import chat.rocket.reactnative.BuildConfig;
+import com.edinnova.edchat.BuildConfig;
 
 import chat.rocket.SharePackage;
 
