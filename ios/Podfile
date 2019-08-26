@@ -2,7 +2,7 @@ platform :ios, '10.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 require_relative '../node_modules/react-native-unimodules/cocoapods.rb'
 
-target 'EdChat' do
+target 'RocketChatRN' do
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -32,7 +32,7 @@ target 'EdChat' do
   use_unimodules!
 end
 
-target 'ShareEdChat' do
+target 'ShareRocketChatRN' do
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'

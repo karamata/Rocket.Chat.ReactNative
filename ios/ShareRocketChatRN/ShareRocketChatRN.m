@@ -1,6 +1,6 @@
 //
-//  ShareEdChat.m
-//  ShareEdChat
+//  ShareRocketChatRN.m
+//  ShareRocketChatRN
 //
 //  Created by Djorkaeff Alexandre Vilela Pereira on 16/05/19.
 //  Copyright © 2019 Facebook. All rights reserved.
@@ -13,10 +13,10 @@
 #import <React/RCTLog.h>
 #import <Firebase.h>
 
-@interface ShareEdChat : ReactNativeShareExtension
+@interface ShareRocketChatRN : ReactNativeShareExtension
 @end
 
-@implementation ShareEdChat
+@implementation ShareRocketChatRN
 
 RCT_EXPORT_MODULE();
 

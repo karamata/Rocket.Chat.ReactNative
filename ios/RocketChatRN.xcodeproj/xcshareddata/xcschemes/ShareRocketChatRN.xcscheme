@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1EC6ACAF22CB9FC300A41C61"
-               BuildableName = "ShareEdChat.appex"
-               BlueprintName = "ShareEdChat"
-               ReferencedContainer = "container:EdChat.xcodeproj">
+               BuildableName = "ShareRocketChatRN.appex"
+               BlueprintName = "ShareRocketChatRN"
+               ReferencedContainer = "container:RocketChatRN.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "EdChat.app"
-               BlueprintName = "EdChat"
-               ReferencedContainer = "container:EdChat.xcodeproj">
+               BuildableName = "RocketChatRN.app"
+               BlueprintName = "RocketChatRN"
+               ReferencedContainer = "container:RocketChatRN.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1EC6ACAF22CB9FC300A41C61"
-            BuildableName = "ShareEdChat.appex"
-            BlueprintName = "ShareEdChat"
-            ReferencedContainer = "container:EdChat.xcodeproj">
+            BuildableName = "ShareRocketChatRN.appex"
+            BlueprintName = "ShareRocketChatRN"
+            ReferencedContainer = "container:RocketChatRN.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "EdChat.app"
-            BlueprintName = "EdChat"
-            ReferencedContainer = "container:EdChat.xcodeproj">
+            BuildableName = "RocketChatRN.app"
+            BlueprintName = "RocketChatRN"
+            ReferencedContainer = "container:RocketChatRN.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "EdChat.app"
-            BlueprintName = "EdChat"
-            ReferencedContainer = "container:EdChat.xcodeproj">
+            BuildableName = "RocketChatRN.app"
+            BlueprintName = "RocketChatRN"
+            ReferencedContainer = "container:RocketChatRN.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
