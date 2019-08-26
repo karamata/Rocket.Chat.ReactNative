@@ -34,7 +34,7 @@ const handleOpen = function* handleOpen({ params }) {
 	}
 
 	if (isIOS) {
-		yield RNUserDefaults.setName('group.ios.chat.edinnova.com');
+		yield RNUserDefaults.setName('group.ios.chat.rocket');
 	}
 
 	let { host } = params;
