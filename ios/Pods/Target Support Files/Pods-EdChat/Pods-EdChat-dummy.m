@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_RocketChatRN : NSObject
+@interface PodsDummy_Pods_EdChat : NSObject
 @end
-@implementation PodsDummy_Pods_RocketChatRN
+@implementation PodsDummy_Pods_EdChat
 @end
