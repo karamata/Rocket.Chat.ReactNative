@@ -25,12 +25,7 @@ const styles = StyleSheet.create({
 	}
 });
 
-@connect(state => ({
-	server: state.server.server
-}), dispatch => ({
-	appStart: root => dispatch(appStart(root))
-}))
-export default class OAuthView extends React.PureComponent {
+class OAuthView extends React.PureComponent {
 	static navigationOptions = () => ({
 		headerLeft: null,
 		title: 'Edinnova Login'
@@ -64,7 +59,7 @@ export default class OAuthView extends React.PureComponent {
 		this.setState({ logging: true });
 
 		try {
-			await RocketChat.loginOAuth(params);
+			await RocketChat.loginOAuthOrSso(params);
 		} catch (e) {
 			console.warn(e);
 		}
@@ -76,7 +71,6 @@ export default class OAuthView extends React.PureComponent {
 		const { navigation } = this.props;
 		const { loading } = this.state;
 		const oAuthUrl = navigation.getParam('oAuthUrl');
-		console.log('is running into this?', oAuthUrl);
 		return (
 			<React.Fragment>
 				<StatusBar />
@@ -104,3 +98,14 @@ export default class OAuthView extends React.PureComponent {
 		);
 	}
 }
+
+
+const mapStateToProps = state => ({
+	server: state.server.server
+});
+
+const mapDispatchToProps = dispatch => ({
+	appStart: root => dispatch(appStart(root))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(OAuthView);

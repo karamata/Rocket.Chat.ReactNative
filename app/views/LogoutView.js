@@ -24,12 +24,7 @@ const styles = StyleSheet.create({
 	}
 });
 
-@connect(state => ({
-	server: state.server.server
-}), dispatch => ({
-	appInit: root => dispatch(appInit(root))
-}))
-export default class LogoutView extends React.PureComponent {
+class LogoutView extends React.PureComponent {
 	static navigationOptions = () => ({
 		headerLeft: null,
 		title: 'Edinnova Logout'
@@ -90,3 +85,13 @@ export default class LogoutView extends React.PureComponent {
 		);
 	}
 }
+
+const mapStateToProps = state => ({
+	server: state.server.server
+});
+
+const mapDispatchToProps = dispatch => ({
+	appInit: root => dispatch(appInit(root))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LogoutView);

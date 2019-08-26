@@ -11,6 +11,9 @@ export default {
 	Accounts_PasswordPlaceholder: {
 		type: 'valueAsString'
 	},
+	Accounts_PasswordReset: {
+		type: 'valueAsBoolean'
+	},
 	CROWD_Enable: {
 		type: 'valueAsBoolean'
 	},
@@ -68,10 +71,22 @@ export default {
 	Threads_enabled: {
 		type: null
 	},
+	FileUpload_MediaTypeWhiteList: {
+		type: 'valueAsString'
+	},
+	FileUpload_MaxFileSize: {
+		type: 'valueAsNumber'
+	},
 	API_Gitlab_URL: {
 		type: 'valueAsString'
 	},
 	AutoTranslate_Enabled: {
 		type: 'valueAsBoolean'
+	},
+	CAS_enabled: {
+		type: 'valueAsBoolean'
+	},
+	CAS_login_url: {
+		type: 'valueAsString'
 	}
 };

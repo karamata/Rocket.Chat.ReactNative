@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_ShareRocketChatRN : NSObject
+@interface PodsDummy_Pods_ShareEdChat : NSObject
 @end
-@implementation PodsDummy_Pods_ShareRocketChatRN
+@implementation PodsDummy_Pods_ShareEdChat
 @end

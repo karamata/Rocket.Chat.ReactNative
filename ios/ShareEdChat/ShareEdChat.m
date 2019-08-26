@@ -1,6 +1,6 @@
 //
-//  ShareRocketChatRN.m
-//  ShareRocketChatRN
+//  ShareEdChat.m
+//  ShareEdChat
 //
 //  Created by Djorkaeff Alexandre Vilela Pereira on 16/05/19.
 //  Copyright © 2019 Facebook. All rights reserved.
@@ -13,10 +13,10 @@
 #import <React/RCTLog.h>
 #import <Firebase.h>
 
-@interface ShareRocketChatRN : ReactNativeShareExtension
+@interface ShareEdChat : ReactNativeShareExtension
 @end
 
-@implementation ShareRocketChatRN
+@implementation ShareEdChat
 
 RCT_EXPORT_MODULE();
 
@@ -30,7 +30,7 @@ RCT_EXPORT_MODULE();
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
   
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:@"ShareRocketChatRN"
+                                                      moduleName:@"ShareEdChat"
                                                initialProperties:nil
                                                    launchOptions:nil];
   rootView.backgroundColor = nil;

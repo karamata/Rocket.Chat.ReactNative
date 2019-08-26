@@ -14,6 +14,9 @@ import {
 	setUser, setLoginServices, loginRequest, loginFailure, logout
 } from '../actions/login';
 import { disconnect, connectSuccess, connectRequest } from '../actions/connect';
+import {
+	shareSelectServer, shareSetUser
+} from '../actions/share';
 
 import subscribeRooms from './methods/subscriptions/rooms';
 import subscribeRoom from './methods/subscriptions/room';
@@ -217,6 +220,35 @@ const RocketChat = {
 		});
 	},
 
+	async shareExtensionInit(server) {
+		database.setActiveDB(server);
+
+		if (this.sdk) {
+			this.sdk.disconnect();
+			this.sdk = null;
+		}
+
+		// Use useSsl: false only if server url starts with http://
+		const useSsl = !/http:\/\//.test(server);
+
+		this.sdk = new RocketchatClient({ host: server, protocol: 'ddp', useSsl });
+
+		// set Server
+		const { serversDB } = database.databases;
+		reduxStore.dispatch(shareSelectServer(server));
+
+		// set User info
+		const userId = await RNUserDefaults.get(`${ RocketChat.TOKEN_KEY }-${ server }`);
+		const user = userId && serversDB.objectForPrimaryKey('user', userId);
+		reduxStore.dispatch(shareSetUser({
+			id: user.id,
+			token: user.token,
+			username: user.username
+		}));
+
+		await RocketChat.login({ resume: user.token });
+	},
+
 	register(credentials) {
 		// RC 0.50.0
 		return this.sdk.post('users.register', credentials, false);
@@ -265,7 +297,7 @@ const RocketChat = {
 		}
 	},
 
-	async loginOAuth(params) {
+	async loginOAuthOrSso(params) {
 		try {
 			const result = await this.login(params);
 			reduxStore.dispatch(loginRequest({ resume: result.token }));
@@ -730,14 +762,14 @@ const RocketChat = {
 		return JSON.parse(useMarkdown);
 	},
 	async getSortPreferences() {
-		const prefs = await AsyncStorage.getItem(SORT_PREFS_KEY);
-		return JSON.parse(prefs);
+		const prefs = await RNUserDefaults.objectForKey(SORT_PREFS_KEY);
+		return prefs;
 	},
 	async saveSortPreference(param) {
 		try {
 			let prefs = await RocketChat.getSortPreferences();
 			prefs = { ...prefs, ...param };
-			return await AsyncStorage.setItem(SORT_PREFS_KEY, JSON.stringify(prefs));
+			return await RNUserDefaults.setObjectForKey(SORT_PREFS_KEY, prefs);
 		} catch (error) {
 			console.warn(error);
 		}
@@ -765,6 +797,25 @@ const RocketChat = {
 			console.warn(error);
 			return Promise.reject();
 		}
+	},
+	_determineAuthType(services) {
+		const { name, custom, service } = services;
+
+		if (custom) {
+			return 'oauth_custom';
+		}
+
+		if (service === 'saml') {
+			return 'saml';
+		}
+
+		if (service === 'cas') {
+			return 'cas';
+		}
+
+		// TODO: remove this after other oauth providers are implemented. e.g. Drupal, github_enterprise
+		const availableOAuth = ['facebook', 'github', 'gitlab', 'google', 'linkedin', 'meteor-developer', 'twitter'];
+		return availableOAuth.includes(name) ? 'oauth' : 'not_supported';
 	},
 	getUsernameSuggestion() {
 		// RC 0.65.0

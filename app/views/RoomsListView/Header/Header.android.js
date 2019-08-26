@@ -34,13 +34,13 @@ const styles = StyleSheet.create({
 });
 
 const Header = React.memo(({
-	connecting, isFetching, serverName, setSearchInputRef, showSearchHeader, onSearchChangeText
+	connecting, isFetching, serverName, showSearchHeader, onSearchChangeText
 }) => {
 	if (showSearchHeader) {
 		return (
 			<View style={styles.container}>
 				<TextInput
-					ref={setSearchInputRef}
+					autoFocus
 					style={styles.server}
 					placeholder='Search'
 					placeholderTextColor='rgba(255, 255, 255, 0.5)'
@@ -63,14 +63,13 @@ const Header = React.memo(({
 Header.propTypes = {
 	showSearchHeader: PropTypes.bool.isRequired,
 	onSearchChangeText: PropTypes.func.isRequired,
-	setSearchInputRef: PropTypes.func.isRequired,
 	connecting: PropTypes.bool,
 	isFetching: PropTypes.bool,
 	serverName: PropTypes.string
 };
 
 Header.defaultProps = {
-	serverName: 'Rocket.Chat'
+	serverName: 'EdChat'
 };
 
 export default Header;

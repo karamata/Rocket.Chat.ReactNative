@@ -57,7 +57,7 @@ class Root extends React.Component {
 
 	init = async() => {
 		if (isIOS) {
-			await RNUserDefaults.setName('group.ios.chat.rocket');
+			await RNUserDefaults.setName('group.ios.chat.edinnova.com');
 		}
 		const currentServer = await RNUserDefaults.get('currentServer');
 		const token = await RNUserDefaults.get(RocketChat.TOKEN_KEY);

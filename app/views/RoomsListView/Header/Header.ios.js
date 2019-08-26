@@ -58,7 +58,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-	serverName: 'Rocket.Chat'
+	serverName: 'EdChat'
 };
 
 HeaderTitle.propTypes = {

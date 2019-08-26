@@ -8,7 +8,7 @@ import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 public class ShareActivity extends ReactActivity {
     @Override
     protected String getMainComponentName() {
-        return "ShareRocketChatRN";
+        return "ShareEdChat";
     }
 
     @Override

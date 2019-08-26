@@ -12,7 +12,7 @@
     "log-android": "react-native log-android",
     "android": "react-native run-android",
     "snyk-protect": "snyk protect",
-    "precommit": "eslint . && jest",
+    "precommit": "eslint .",
     "postinstall": "patch-package && jetify"
   },
   "husky": {

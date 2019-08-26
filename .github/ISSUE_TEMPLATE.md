@@ -1,5 +1,5 @@
-- Your Rocket.Chat Experimental app version: ####
-- Your Rocket.Chat server version: ####
+- Your EdChat app version: ####
+- Your EdChat server version: ####
 - Device (or Simulator) you're running with: ####
 
 **The app isn't connecting to your server?**

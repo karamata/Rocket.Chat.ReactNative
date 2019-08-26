@@ -22,7 +22,7 @@ const restore = function* restore() {
 	try {
 		let hasMigration;
 		if (isIOS) {
-			yield RNUserDefaults.setName('group.ios.chat.rocket');
+			yield RNUserDefaults.setName('group.ios.chat.edinnova.com');
 			hasMigration = yield AsyncStorage.getItem('hasMigration');
 		}
 

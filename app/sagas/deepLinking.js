@@ -1,6 +1,5 @@
-import { delay } from 'redux-saga';
 import {
-	takeLatest, take, select, put, all
+	takeLatest, take, select, put, all, delay
 } from 'redux-saga/effects';
 import RNUserDefaults from 'rn-user-defaults';
 
@@ -35,7 +34,7 @@ const handleOpen = function* handleOpen({ params }) {
 	}
 
 	if (isIOS) {
-		yield RNUserDefaults.setName('group.ios.chat.rocket');
+		yield RNUserDefaults.setName('group.ios.chat.edinnova.com');
 	}
 
 	let { host } = params;

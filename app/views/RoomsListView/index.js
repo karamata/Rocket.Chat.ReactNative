@@ -32,34 +32,11 @@ import { selectServerRequest as selectServerRequestAction } from '../../actions/
 
 const SCROLL_OFFSET = 56;
 
-const shouldUpdateProps = ['searchText', 'loadingServer', 'sortBy', 'groupByType', 'showFavorites', 'showUnread', 'useRealName', 'StoreLastMessage', 'appState'];
+const shouldUpdateProps = ['searchText', 'loadingServer', 'showServerDropdown', 'showSortDropdown', 'sortBy', 'groupByType', 'showFavorites', 'showUnread', 'useRealName', 'StoreLastMessage', 'appState'];
 const getItemLayout = (data, index) => ({ length: ROW_HEIGHT, offset: ROW_HEIGHT * index, index });
 const keyExtractor = item => item.rid;
 
-@connect(state => ({
-	userId: state.login.user && state.login.user.id,
-	isAuthenticated: state.login.isAuthenticated,
-	server: state.server.server,
-	baseUrl: state.settings.baseUrl || state.server ? state.server.server : '',
-	searchText: state.rooms.searchText,
-	loadingServer: state.server.loading,
-	showSortDropdown: state.rooms.showSortDropdown,
-	sortBy: state.sortPreferences.sortBy,
-	groupByType: state.sortPreferences.groupByType,
-	showFavorites: state.sortPreferences.showFavorites,
-	showUnread: state.sortPreferences.showUnread,
-	useRealName: state.settings.UI_Use_Real_Name,
-	appState: state.app.ready && state.app.foreground ? 'foreground' : 'background',
-	StoreLastMessage: state.settings.Store_Last_Message
-}), dispatch => ({
-	toggleSortDropdown: () => dispatch(toggleSortDropdownAction()),
-	openSearchHeader: () => dispatch(openSearchHeaderAction()),
-	closeSearchHeader: () => dispatch(closeSearchHeaderAction()),
-	appStart: () => dispatch(appStartAction()),
-	roomsRequest: () => dispatch(roomsRequestAction()),
-	selectServerRequest: server => dispatch(selectServerRequestAction(server))
-}))
-export default class RoomsListView extends React.Component {
+class RoomsListView extends React.Component {
 	static navigationOptions = ({ navigation }) => {
 		const searching = navigation.getParam('searching');
 		const cancelSearchingAndroid = navigation.getParam('cancelSearchingAndroid');
@@ -93,6 +70,8 @@ export default class RoomsListView extends React.Component {
 	static propTypes = {
 		navigation: PropTypes.object,
 		userId: PropTypes.string,
+		username: PropTypes.string,
+		token: PropTypes.string,
 		baseUrl: PropTypes.string,
 		server: PropTypes.string,
 		searchText: PropTypes.string,
@@ -392,7 +371,15 @@ export default class RoomsListView extends React.Component {
 
 	toggleFav = async(rid, favorite) => {
 		try {
-			await RocketChat.toggleFavorite(rid, !favorite);
+			const result = await RocketChat.toggleFavorite(rid, !favorite);
+			if (result.success) {
+				database.write(() => {
+					const sub = database.objects('subscriptions').filtered('rid == $0', rid)[0];
+					if (sub) {
+						sub.f = !favorite;
+					}
+				});
+			}
 		} catch (e) {
 			log('error_toggle_favorite', e);
 		}
@@ -458,7 +445,7 @@ export default class RoomsListView extends React.Component {
 	renderItem = ({ item }) => {
 		const { width } = this.state;
 		const {
-			userId, baseUrl, StoreLastMessage
+			userId, username, token, baseUrl, StoreLastMessage
 		} = this.props;
 		const id = item.rid.replace(userId, '').trim();
 
@@ -475,6 +462,9 @@ export default class RoomsListView extends React.Component {
 					_updatedAt={item.roomUpdatedAt}
 					key={item._id}
 					id={id}
+					userId={userId}
+					username={username}
+					token={token}
 					rid={item.rid}
 					type={item.t}
 					baseUrl={baseUrl}
@@ -483,7 +473,6 @@ export default class RoomsListView extends React.Component {
 					onPress={() => this._onPressItem(item)}
 					testID={`rooms-list-view-item-${ item.name }`}
 					width={width}
-					height={ROW_HEIGHT}
 					toggleFav={this.toggleFav}
 					toggleRead={this.toggleRead}
 					hideChannel={this.hideChannel}
@@ -588,7 +577,7 @@ export default class RoomsListView extends React.Component {
 					renderItem={this.renderItem}
 					ListHeaderComponent={this.renderListHeader}
 					getItemLayout={getItemLayout}
-					removeClippedSubviews
+					// removeClippedSubviews
 					keyboardShouldPersistTaps='always'
 					initialNumToRender={9}
 					windowSize={9}
@@ -616,7 +605,7 @@ export default class RoomsListView extends React.Component {
 		} = this.props;
 
 		return (
-			<SafeAreaView style={styles.container} testID='rooms-list-view' forceInset={{ bottom: 'never' }}>
+			<SafeAreaView style={styles.container} testID='rooms-list-view' forceInset={{ vertical: 'never' }}>
 				<StatusBar />
 				{this.renderScroll()}
 				{showSortDropdown
@@ -635,3 +624,33 @@ export default class RoomsListView extends React.Component {
 		);
 	}
 }
+
+const mapStateToProps = state => ({
+	userId: state.login.user && state.login.user.id,
+	username: state.login.user && state.login.user.username,
+	token: state.login.user && state.login.user.token,
+	isAuthenticated: state.login.isAuthenticated,
+	server: state.server.server,
+	baseUrl: state.settings.baseUrl || state.server ? state.server.server : '',
+	searchText: state.rooms.searchText,
+	loadingServer: state.server.loading,
+	showSortDropdown: state.rooms.showSortDropdown,
+	sortBy: state.sortPreferences.sortBy,
+	groupByType: state.sortPreferences.groupByType,
+	showFavorites: state.sortPreferences.showFavorites,
+	showUnread: state.sortPreferences.showUnread,
+	useRealName: state.settings.UI_Use_Real_Name,
+	appState: state.app.ready && state.app.foreground ? 'foreground' : 'background',
+	StoreLastMessage: state.settings.Store_Last_Message
+});
+
+const mapDispatchToProps = dispatch => ({
+	toggleSortDropdown: () => dispatch(toggleSortDropdownAction()),
+	openSearchHeader: () => dispatch(openSearchHeaderAction()),
+	closeSearchHeader: () => dispatch(closeSearchHeaderAction()),
+	appStart: () => dispatch(appStartAction()),
+	roomsRequest: () => dispatch(roomsRequestAction()),
+	selectServerRequest: server => dispatch(selectServerRequestAction(server))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(RoomsListView);
