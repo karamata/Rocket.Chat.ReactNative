@@ -33,7 +33,7 @@
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
-				<data android:scheme="https" android:host="go.rocket.chat" />
+				<data android:scheme="https" android:host="chatdev.edinnova.com" />
 				<data android:scheme="rocketchat" android:host="room" />
 				<data android:scheme="rocketchat" android:host="auth" />
 			</intent-filter>
