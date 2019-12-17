@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:684783679591:android:023abf02467d6449b8fcc2",
+        "mobilesdk_app_id": "1:684783679591:android:781d1df978cca3a4b8fcc2",
         "android_client_info": {
-          "package_name": "com.edinnova.chat"
+          "package_name": "com.edinnova.edchat"
         }
       },
       "oauth_client": [
