@@ -41,7 +41,7 @@ useScreens();
 
 const parseDeepLinking = (url) => {
 	if (url) {
-		url = url.replace(/edchat:\/\/|https:\/\/chatdev.edinnova.com\//, '');
+		url = url.replace(/edchat:\/\/|https:\/\/chat.edinnova.com\//, '');
 		const regex = /^(room|auth)\?/;
 		if (url.match(regex)) {
 			url = url.replace(regex, '').trim();

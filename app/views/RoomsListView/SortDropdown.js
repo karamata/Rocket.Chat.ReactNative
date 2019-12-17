@@ -40,7 +40,7 @@ class Sort extends PureComponent {
 				duration: ANIMATION_DURATION,
 				easing: Easing.inOut(Easing.quad),
 				useNativeDriver: true
-			},
+			}
 		).start();
 	}
 
@@ -94,7 +94,7 @@ class Sort extends PureComponent {
 				duration: ANIMATION_DURATION,
 				easing: Easing.inOut(Easing.quad),
 				useNativeDriver: true
-			},
+			}
 		).start(() => close());
 	}
 

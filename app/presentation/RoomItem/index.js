@@ -93,7 +93,7 @@ export default class RoomItem extends React.Component {
 	_handleRelease = (nativeEvent) => {
 		const { translationX } = nativeEvent;
 		const { rowState } = this.state;
-		this._value = this._value + translationX;
+		this._value += translationX;
 
 		let toValue = 0;
 		if (rowState === 0) { // if no option is opened
