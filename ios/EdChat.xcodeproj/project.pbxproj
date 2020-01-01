@@ -657,7 +657,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.edinnova.edchat;
 				PRODUCT_NAME = EdChat;
-				PROVISIONING_PROFILE_SPECIFIER = "Development chat.rocket.reactnative";
+				PROVISIONING_PROFILE_SPECIFIER = EdChat;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -700,7 +700,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.edinnova.edchat;
 				PRODUCT_NAME = EdChat;
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore chat.rocket.reactnative";
+				PROVISIONING_PROFILE_SPECIFIER = EdChat;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

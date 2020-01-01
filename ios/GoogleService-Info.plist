@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>649090337940-bsfk651m0ddaknjn6td9chj9r196o3u5.apps.googleusercontent.com</string>
+	<string>684783679591-su9ko4e5mf7v3dj7om9kvph4imtkkojg.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.649090337940-bsfk651m0ddaknjn6td9chj9r196o3u5</string>
+	<string>com.googleusercontent.apps.684783679591-su9ko4e5mf7v3dj7om9kvph4imtkkojg</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAl5aDiOt9BZtffzywrBXkNMxwQmiSyK34</string>
+	<string>AIzaSyA2-z-Kuc0q7xG8t_1zA0OJbWxBZvrtkfA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>649090337940</string>
+	<string>684783679591</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.edinnova.edchat</string>
 	<key>PROJECT_ID</key>
-	<string>edinnova-chat-dev</string>
+	<string>edinnova-chat-776c2</string>
 	<key>STORAGE_BUCKET</key>
-	<string>edinnova-chat-dev.appspot.com</string>
+	<string>edinnova-chat-776c2.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:649090337940:ios:a0eed1795106be44</string>
+	<string>1:684783679591:ios:6b8c6fadb3f9b327b8fcc2</string>
 	<key>DATABASE_URL</key>
-	<string>https://edinnova-chat-dev.firebaseio.com</string>
+	<string>https://edinnova-chat-776c2.firebaseio.com</string>
 </dict>
 </plist>
