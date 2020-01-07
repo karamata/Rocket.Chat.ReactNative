@@ -1,5 +1,5 @@
 import Realm from 'realm';
-import RNRealmPath from 'react-native-realm-path';
+import RNRealmPath from 'react-native-edinnova-realm-path';
 
 // import { AsyncStorage } from 'react-native';
 // Realm.clearTestState();

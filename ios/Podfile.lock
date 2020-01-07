@@ -159,7 +159,7 @@ PODS:
     - React
   - react-native-orientation-locker (1.1.6):
     - React
-  - react-native-realm-path (1.2.11):
+  - react-native-edinnova-realm-path (1.2.11):
     - React
   - react-native-splash-screen (3.2.0):
     - React
@@ -277,7 +277,7 @@ DEPENDENCIES:
   - react-native-keyboard-tracking-view (from `../node_modules/react-native-keyboard-tracking-view`)
   - react-native-notifications (from `../node_modules/react-native-notifications`)
   - react-native-orientation-locker (from `../node_modules/react-native-orientation-locker`)
-  - react-native-realm-path (from `../node_modules/react-native-realm-path`)
+  - react-native-edinnova-realm-path (from `../node_modules/react-native-edinnova-realm-path`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
   - react-native-video (from `../node_modules/react-native-video`)
   - react-native-webview (from `../node_modules/react-native-webview`)
@@ -386,8 +386,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-notifications"
   react-native-orientation-locker:
     :path: "../node_modules/react-native-orientation-locker"
-  react-native-realm-path:
-    :path: "../node_modules/react-native-realm-path"
+  react-native-edinnova-realm-path:
+    :path: "../node_modules/react-native-edinnova-realm-path"
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
   react-native-video:
@@ -512,7 +512,7 @@ SPEC CHECKSUMS:
   react-native-keyboard-tracking-view: 1ebd24a2b6ca2314549aa51775995678094bffa1
   react-native-notifications: 3385ff44e246c62e0eabe7ee414fc5e2e6a61fec
   react-native-orientation-locker: 23918c400376a7043e752c639c122fcf6bce8f1c
-  react-native-realm-path: 868473ea0bc4629850f1ec51a70d81055c06d091
+  react-native-edinnova-realm-path: 868473ea0bc4629850f1ec51a70d81055c06d091
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   react-native-video: 6555881252c8ca039760e1cd6df28ac28ffb2baf
   react-native-webview: 9f588ea09ede9bd1f5443f4aa4ddfadeb51fcd28

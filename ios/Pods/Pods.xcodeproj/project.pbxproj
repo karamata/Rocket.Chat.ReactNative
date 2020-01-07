@@ -822,7 +822,7 @@
 		701BAD637AAC7BA99FC0F178FE78B54F /* RCTTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = B388295C2DB34FC95B11D45FD3F7ED8C /* RCTTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		70263DBA372F3DD2BFF26D0B64C968FF /* RCTBridgeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0928F28570A4E251D42682C0BE36AAF0 /* RCTBridgeDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		708B5E67847F332FFC954B77D1526F4B /* EXAudioRecordingPermissionRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = B68FBDADC9088281D75A09CC42597B73 /* EXAudioRecordingPermissionRequester.m */; };
-		7118E1647B5BFE43437E341CA7899B6B /* react-native-realm-path-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6005E5520C5BD037CD296F6FCC19D51F /* react-native-realm-path-dummy.m */; };
+		7118E1647B5BFE43437E341CA7899B6B /* react-native-edinnova-realm-path-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6005E5520C5BD037CD296F6FCC19D51F /* react-native-edinnova-realm-path-dummy.m */; };
 		71A862EEE3D57B3D9E8666692CF1C78F /* CxxModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F96E99F7B1E8CCAEB1F6456D17CA6FF2 /* CxxModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		71F203CCEBC00318FBB3342A579FEECB /* instrumentation.h in Headers */ = {isa = PBXBuildFile; fileRef = D078D6E948D1636AB9BECB3A4D64F0C2 /* instrumentation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		723B1DEC2C8098017A02DF898B87E8D0 /* GULLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B6263E8AF1D03986E8C1A3B7DA7D13 /* GULLogger.m */; };
@@ -1586,7 +1586,7 @@
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6BFF63EB65229754461AE235A2D9DFE8;
-			remoteInfo = "react-native-realm-path";
+			remoteInfo = "react-native-edinnova-realm-path";
 		};
 		01E18CB6577772AA25010639664FCD22 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1936,7 +1936,7 @@
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6BFF63EB65229754461AE235A2D9DFE8;
-			remoteInfo = "react-native-realm-path";
+			remoteInfo = "react-native-edinnova-realm-path";
 		};
 		48A219991CE18ECB6FAA3E02C8EF5387 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -3386,7 +3386,7 @@
 		125EBCB214393C88735EF8C2C7869135 /* RCTReconnectingWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTReconnectingWebSocket.h; sourceTree = "<group>"; };
 		127435DBC940400B5D902F84731A68A7 /* yuv_sse2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yuv_sse2.c; path = src/dsp/yuv_sse2.c; sourceTree = "<group>"; };
 		12792501F3B18EEAEE4E77DD2673D379 /* RCTSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSlider.m; sourceTree = "<group>"; };
-		1290C27799684EA26E72D9E2A2F617CB /* react-native-realm-path.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-realm-path.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1290C27799684EA26E72D9E2A2F617CB /* react-native-edinnova-realm-path.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-edinnova-realm-path.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		12B132F0B539FD599F47756CE6CFF272 /* RCTSRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSRWebSocket.h; sourceTree = "<group>"; };
 		12B6FE955DAFF4C7DBAEF58F2ADF4CE9 /* FIRInstanceIDCheckinStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstanceIDCheckinStore.m; path = Firebase/InstanceID/FIRInstanceIDCheckinStore.m; sourceTree = "<group>"; };
 		12F9D5ADBA42BFAEFC1CF9EB1CE0A335 /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
@@ -3910,7 +3910,7 @@
 		5FD6E93D08EA0F3665DBF9F318C55A9A /* RCTTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTextView.m; sourceTree = "<group>"; };
 		5FEF11774B94C04DA9A5057B8973BF8E /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+FirstResponder.m"; path = "lib/UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
 		600443DB9ACD07A807121D72277DAE13 /* RCTComponentData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTComponentData.h; sourceTree = "<group>"; };
-		6005E5520C5BD037CD296F6FCC19D51F /* react-native-realm-path-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-realm-path-dummy.m"; sourceTree = "<group>"; };
+		6005E5520C5BD037CD296F6FCC19D51F /* react-native-edinnova-realm-path-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-edinnova-realm-path-dummy.m"; sourceTree = "<group>"; };
 		6008AC53A6EB9B05258C5140E55258F4 /* YGMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGMacros.h; path = yoga/YGMacros.h; sourceTree = "<group>"; };
 		601077786F2BF31AB6F54D1309CC77E5 /* ssim.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ssim.c; path = src/dsp/ssim.c; sourceTree = "<group>"; };
 		6013F9366E4A5DF788DC2EF8FE75AD79 /* FIRDependency.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDependency.h; path = Firebase/Core/Private/FIRDependency.h; sourceTree = "<group>"; };
@@ -4643,7 +4643,7 @@
 		CBD4E654C7EADCABFB701CC3B24F88F3 /* UIColor+HexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "SDWebImage/Private/UIColor+HexString.h"; sourceTree = "<group>"; };
 		CBFB63F39D940238AE9A922396346EFC /* demux.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = demux.h; path = src/webp/demux.h; sourceTree = "<group>"; };
 		CC25C098200B215F002DBFAF31C95974 /* NSImage+Compatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+Compatibility.m"; path = "SDWebImage/NSImage+Compatibility.m"; sourceTree = "<group>"; };
-		CC2690EC6DAB9BD159758E6E2343D785 /* libreact-native-realm-path.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libreact-native-realm-path.a"; path = "libreact-native-realm-path.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2690EC6DAB9BD159758E6E2343D785 /* libreact-native-edinnova-realm-path.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libreact-native-edinnova-realm-path.a"; path = "libreact-native-edinnova-realm-path.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2B46E71144CD98FCECD5568AD76399 /* libReact-cxxreact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libReact-cxxreact.a"; path = "libReact-cxxreact.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5B69A280EDE7AC53D55EA59EBC6283 /* FFFastImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FFFastImageView.h; path = ios/FastImage/FFFastImageView.h; sourceTree = "<group>"; };
 		CC5BCCBE54767B6F2A24DC7548674A41 /* React-jsi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "React-jsi-dummy.m"; sourceTree = "<group>"; };
@@ -4724,7 +4724,7 @@
 		D92695BB5FA342D3097CEFDBEF6DF44F /* FIROptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIROptions.m; path = Firebase/Core/FIROptions.m; sourceTree = "<group>"; };
 		D9359382B6211ECE18E6B83F6C1F2412 /* dec_sse41.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dec_sse41.c; path = src/dsp/dec_sse41.c; sourceTree = "<group>"; };
 		D94428A50A19211CAD2AE58AF08B3F08 /* alpha_dec.c */ = {isa = PBXFileReference; includeInIndex = 1; name = alpha_dec.c; path = src/dec/alpha_dec.c; sourceTree = "<group>"; };
-		D9C690BD87ADA90F078EEB7D2CF3806C /* react-native-realm-path.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-realm-path.xcconfig"; sourceTree = "<group>"; };
+		D9C690BD87ADA90F078EEB7D2CF3806C /* react-native-edinnova-realm-path.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-edinnova-realm-path.xcconfig"; sourceTree = "<group>"; };
 		D9E08838E10EAA3B6ACF88FFD9E421EF /* rn-fetch-blob-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "rn-fetch-blob-prefix.pch"; sourceTree = "<group>"; };
 		D9ED07273D4CD34777C1D7FDC6A9A423 /* libUMReactNativeAdapter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libUMReactNativeAdapter.a; path = libUMReactNativeAdapter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA09483D2E099B878AF3746E56EE4D24 /* SDImageAPNGCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAPNGCoder.m; path = SDWebImage/SDImageAPNGCoder.m; sourceTree = "<group>"; };
@@ -4925,7 +4925,7 @@
 		F6287FC1A4700846C6DB87EA24701D9A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		F63391198CF9D67A46C1453838CFCB4F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		F6558888CC580F1291B78663386C2B93 /* RCTShadowView+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTShadowView+Internal.h"; sourceTree = "<group>"; };
-		F65F4EFD119A9BDBB8DDA8443DAFDD4D /* react-native-realm-path-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-realm-path-prefix.pch"; sourceTree = "<group>"; };
+		F65F4EFD119A9BDBB8DDA8443DAFDD4D /* react-native-edinnova-realm-path-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-edinnova-realm-path-prefix.pch"; sourceTree = "<group>"; };
 		F66F1A21E0C1303CEE6894BCDF672D47 /* SDWebImageDownloaderConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderConfig.m; path = SDWebImage/SDWebImageDownloaderConfig.m; sourceTree = "<group>"; };
 		F6A3C1B7E4F5B3A004E62CB5A0543C05 /* RCTSegmentedControlManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSegmentedControlManager.h; sourceTree = "<group>"; };
 		F6B81AA2B26B29461E69AD86B07CC3F2 /* Yoga.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Yoga.cpp; path = yoga/Yoga.cpp; sourceTree = "<group>"; };
@@ -6460,12 +6460,12 @@
 		34EB42BEEC9D1D9C234A7E2E081D196C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D9C690BD87ADA90F078EEB7D2CF3806C /* react-native-realm-path.xcconfig */,
-				6005E5520C5BD037CD296F6FCC19D51F /* react-native-realm-path-dummy.m */,
-				F65F4EFD119A9BDBB8DDA8443DAFDD4D /* react-native-realm-path-prefix.pch */,
+				D9C690BD87ADA90F078EEB7D2CF3806C /* react-native-edinnova-realm-path.xcconfig */,
+				6005E5520C5BD037CD296F6FCC19D51F /* react-native-edinnova-realm-path-dummy.m */,
+				F65F4EFD119A9BDBB8DDA8443DAFDD4D /* react-native-edinnova-realm-path-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../../ios/Pods/Target Support Files/react-native-realm-path";
+			path = "../../ios/Pods/Target Support Files/react-native-edinnova-realm-path";
 			sourceTree = "<group>";
 		};
 		364A184CE0E1FC3629A238E785ADFE94 /* React-RCTSettings */ = {
@@ -8282,7 +8282,7 @@
 				DA5AF5ACFE6A13F4DEA34278ABF7D274 /* react-native-keyboard-tracking-view */,
 				C732570A69225C5472C7AC1B2991766B /* react-native-notifications */,
 				CA19D88DEC70E03A0C99427367D41BE3 /* react-native-orientation-locker */,
-				FB47A83D191BB7FF5AD4E9934B0AAB9C /* react-native-realm-path */,
+				FB47A83D191BB7FF5AD4E9934B0AAB9C /* react-native-edinnova-realm-path */,
 				7C270538BEE11F569D54121537EA72B9 /* react-native-splash-screen */,
 				950B14CF6B2E0559C8C5D7C10E45BA5F /* react-native-video */,
 				68499F74D91D416ABD0AF9A84E17F85D /* react-native-webview */,
@@ -8728,7 +8728,7 @@
 		BD27BCB5A573AD8E9FC5AF28EFFDF60A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				1290C27799684EA26E72D9E2A2F617CB /* react-native-realm-path.podspec */,
+				1290C27799684EA26E72D9E2A2F617CB /* react-native-edinnova-realm-path.podspec */,
 				70793B20EAF64112FE67C77C79ABD671 /* README.md */,
 			);
 			name = Pod;
@@ -9305,7 +9305,7 @@
 				C71F7BF761FD0D32B4D3C2572FAE3D83 /* libreact-native-keyboard-tracking-view.a */,
 				15068F514A4938200C7B5796F969294E /* libreact-native-notifications.a */,
 				86988BACF9CE1FA22E6A26A1CCD69E57 /* libreact-native-orientation-locker.a */,
-				CC2690EC6DAB9BD159758E6E2343D785 /* libreact-native-realm-path.a */,
+				CC2690EC6DAB9BD159758E6E2343D785 /* libreact-native-edinnova-realm-path.a */,
 				B057235EDDDEA0A19448F7A0E11E0927 /* libreact-native-splash-screen.a */,
 				70183AF78B3E67FE8992EA052927FDDD /* libreact-native-video.a */,
 				9DF3F87D6384F6C4175BD33AAA033318 /* libreact-native-webview.a */,
@@ -9679,7 +9679,7 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		FB47A83D191BB7FF5AD4E9934B0AAB9C /* react-native-realm-path */ = {
+		FB47A83D191BB7FF5AD4E9934B0AAB9C /* react-native-edinnova-realm-path */ = {
 			isa = PBXGroup;
 			children = (
 				C6CA8A8D2A78B703946ABE4C4AE6D1A4 /* RNRealmPath.h */,
@@ -9687,8 +9687,8 @@
 				BD27BCB5A573AD8E9FC5AF28EFFDF60A /* Pod */,
 				34EB42BEEC9D1D9C234A7E2E081D196C /* Support Files */,
 			);
-			name = "react-native-realm-path";
-			path = "../../node_modules/react-native-realm-path";
+			name = "react-native-edinnova-realm-path";
+			path = "../../node_modules/react-native-edinnova-realm-path";
 			sourceTree = "<group>";
 		};
 		FD961EA17C1C53F4C98FB529FF0AF5D9 /* Pod */ = {
@@ -11394,9 +11394,9 @@
 			productReference = 0DBCBB6BDD943F7F16CAC33D20D1B8EF /* libRNLocalize.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		6BFF63EB65229754461AE235A2D9DFE8 /* react-native-realm-path */ = {
+		6BFF63EB65229754461AE235A2D9DFE8 /* react-native-edinnova-realm-path */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD3A93F518842F10E8F652F6B22E6441 /* Build configuration list for PBXNativeTarget "react-native-realm-path" */;
+			buildConfigurationList = BD3A93F518842F10E8F652F6B22E6441 /* Build configuration list for PBXNativeTarget "react-native-edinnova-realm-path" */;
 			buildPhases = (
 				D95CBC46EBBD71FBA9966F1FB7D6B16F /* Headers */,
 				C5F9F47CCB5F2226CB548CC662D16B3C /* Sources */,
@@ -11407,9 +11407,9 @@
 			dependencies = (
 				77432839A9D15B4C9A31A580A0E602EE /* PBXTargetDependency */,
 			);
-			name = "react-native-realm-path";
-			productName = "react-native-realm-path";
-			productReference = CC2690EC6DAB9BD159758E6E2343D785 /* libreact-native-realm-path.a */;
+			name = "react-native-edinnova-realm-path";
+			productName = "react-native-edinnova-realm-path";
+			productReference = CC2690EC6DAB9BD159758E6E2343D785 /* libreact-native-edinnova-realm-path.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		6C602F8A6A29C09902789E61591B4317 /* React-RCTWebSocket */ = {
@@ -12181,7 +12181,7 @@
 				CC1C921020F74D84A65DCA50ED477F91 /* react-native-keyboard-tracking-view */,
 				FFE7652D1DAC696C7D28E4C18D77A3CA /* react-native-notifications */,
 				0E42F44C118F74854B3E7EA2250E50CA /* react-native-orientation-locker */,
-				6BFF63EB65229754461AE235A2D9DFE8 /* react-native-realm-path */,
+				6BFF63EB65229754461AE235A2D9DFE8 /* react-native-edinnova-realm-path */,
 				5F5A7ABB9250359B65C5898C226972A3 /* react-native-splash-screen */,
 				C3DCE8DC8B0A22CBB9BC32B7679F440F /* react-native-video */,
 				A88D56618644DA6D24743D608EED79AA /* react-native-webview */,
@@ -13172,7 +13172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7118E1647B5BFE43437E341CA7899B6B /* react-native-realm-path-dummy.m in Sources */,
+				7118E1647B5BFE43437E341CA7899B6B /* react-native-edinnova-realm-path-dummy.m in Sources */,
 				892B3606EF670E10321C141C79B0BA85 /* RNRealmPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -13406,8 +13406,8 @@
 		};
 		00A463C906DC4A63F07D42D5B6B2CC92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "react-native-realm-path";
-			target = 6BFF63EB65229754461AE235A2D9DFE8 /* react-native-realm-path */;
+			name = "react-native-edinnova-realm-path";
+			target = 6BFF63EB65229754461AE235A2D9DFE8 /* react-native-edinnova-realm-path */;
 			targetProxy = 01D9100D84BA04973F1AA37EA303A98F /* PBXContainerItemProxy */;
 		};
 		00F3AE867AB32E0192DA0885D867BC67 /* PBXTargetDependency */ = {
@@ -13628,8 +13628,8 @@
 		};
 		25161CA6A957EE06084D94B6CAB1FD97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "react-native-realm-path";
-			target = 6BFF63EB65229754461AE235A2D9DFE8 /* react-native-realm-path */;
+			name = "react-native-edinnova-realm-path";
+			target = 6BFF63EB65229754461AE235A2D9DFE8 /* react-native-edinnova-realm-path */;
 			targetProxy = 489758CA800847CE4FF15E4529EF5240 /* PBXContainerItemProxy */;
 		};
 		265AAC191D7ED2C27632F294EF3AD556 /* PBXTargetDependency */ = {
@@ -14882,7 +14882,7 @@
 		};
 		02B2904A4958B398C10CB437226A275A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9C690BD87ADA90F078EEB7D2CF3806C /* react-native-realm-path.xcconfig */;
+			baseConfigurationReference = D9C690BD87ADA90F078EEB7D2CF3806C /* react-native-edinnova-realm-path.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -14890,13 +14890,13 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/react-native-realm-path/react-native-realm-path-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/react-native-edinnova-realm-path/react-native-edinnova-realm-path-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = react_native_realm_path;
-				PRODUCT_NAME = "react-native-realm-path";
+				PRODUCT_NAME = "react-native-edinnova-realm-path";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -16823,7 +16823,7 @@
 		};
 		960732107332EF3E302700308B5D2FC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9C690BD87ADA90F078EEB7D2CF3806C /* react-native-realm-path.xcconfig */;
+			baseConfigurationReference = D9C690BD87ADA90F078EEB7D2CF3806C /* react-native-edinnova-realm-path.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -16831,13 +16831,13 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/react-native-realm-path/react-native-realm-path-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/react-native-edinnova-realm-path/react-native-edinnova-realm-path-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = react_native_realm_path;
-				PRODUCT_NAME = "react-native-realm-path";
+				PRODUCT_NAME = "react-native-edinnova-realm-path";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -19028,7 +19028,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD3A93F518842F10E8F652F6B22E6441 /* Build configuration list for PBXNativeTarget "react-native-realm-path" */ = {
+		BD3A93F518842F10E8F652F6B22E6441 /* Build configuration list for PBXNativeTarget "react-native-edinnova-realm-path" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				960732107332EF3E302700308B5D2FC2 /* Debug */,
