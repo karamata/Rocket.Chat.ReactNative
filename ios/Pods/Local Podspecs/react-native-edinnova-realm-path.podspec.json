@@ -1,0 +1,23 @@
+{
+  "name": "react-native-edinnova-realm-path",
+  "version": "0.0.2",
+  "summary": "A helper to Realm Path on AppGroup iOS.",
+  "license": "MIT",
+  "authors": {
+    "name": "Edinnova's Team"
+  },
+  "homepage": "https://github.com/karamata/react-native-edinnova-realm-path",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/karamata/react-native-edinnova-realm-path.git",
+    "tag": "v0.0.2"
+  },
+  "source_files": "ios/**/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

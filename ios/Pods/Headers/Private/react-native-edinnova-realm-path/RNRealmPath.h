@@ -1,0 +1,1 @@
+../../../../../node_modules/react-native-edinnova-realm-path/ios/RNRealmPath.h
