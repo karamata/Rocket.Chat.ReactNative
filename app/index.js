@@ -107,7 +107,8 @@ ChatsStack.navigationOptions = ({ navigation }) => {
 const ChatsDrawer = createDrawerNavigator({
 	ChatsStack
 }, {
-	contentComponent: Sidebar
+	contentComponent: Sidebar,
+	overlayColor: 'rgba(0, 0, 0, 0.3)'
 });
 
 const NewMessageStack = createStackNavigator({

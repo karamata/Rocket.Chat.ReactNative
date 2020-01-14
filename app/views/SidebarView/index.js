@@ -123,6 +123,7 @@ class Sidebar extends Component {
 
 	sidebarNavigate = (route) => {
 		const { navigation } = this.props;
+		navigation.toggleDrawer();
 		navigation.navigate(route);
 	}
 
