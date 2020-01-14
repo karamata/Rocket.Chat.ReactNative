@@ -110,6 +110,7 @@ const handleLoginSuccess = function* handleLoginSuccess({ user }) {
 const handleLogout = function* handleLogout() {
 	const server = yield select(getServer);
 	const services = yield select(getServices);
+	const edinnova = services.edinnova ? { ...services.edinnova } : {};
 	if (server && services) {
 		try {
 			yield call(logoutCall, { server });
@@ -123,9 +124,7 @@ const handleLogout = function* handleLogout() {
 			});
 			// yield put(serverRequest(server));
 			// eslint-disable-next-line react/destructuring-assignment
-			console.log('xxxxxxxxxxxxxx  vvv', services.edinnova);
-			const endpoint = services.edinnova.logoutPath.startsWith('http') ? services.edinnova.logoutPath : `${ services.edinnova.serverURL }${ services.edinnova.logoutPath }`;
-			console.log('>>>>>>>> error 6 ');
+			const endpoint = edinnova.logoutPath.startsWith('http') ? edinnova.logoutPath : `${ edinnova.serverURL }${ edinnova.logoutPath }`;
 			// eslint-disable-next-line react/destructuring-assignment
 			const redirect_uri = `${ server }/_oauth/edinnova`;
 			const state = Base64.encodeURI(JSON.stringify({
@@ -137,10 +136,8 @@ const handleLogout = function* handleLogout() {
 				close: true,
 				action: 'logout'
 			}));
-			console.log('>>>>>>>> error 7 ');
 			// eslint-disable-next-line react/destructuring-assignment
-			const params = `?client_id=${ services.edinnova.clientId }&redirect_uri=${ redirect_uri }&scope=${ services.edinnova.scope }&state=${ state }&response_type=code`;
-			console.log('>>>>>>>> error 8 ', endpoint, params);
+			const params = `?client_id=${ edinnova.clientId }&redirect_uri=${ redirect_uri }&scope=${ edinnova.scope }&state=${ state }&response_type=code`;
 			Navigation.navigate('LogoutView', { logoutUrl: `${ endpoint }${ params }` });
 		} catch (e) {
 			// yield put(serverRequest(appConfig.server));

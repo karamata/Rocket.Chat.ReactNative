@@ -12,15 +12,15 @@ import RocketChat from '../lib/rocketchat';
 
 let roomsSub;
 
-const removeSub = function removeSub() {
+const removeSub = function* removeSub() {
 	if (roomsSub && roomsSub.stop) {
-		roomsSub.stop();
+		yield roomsSub.stop();
 	}
 };
 
 const handleRoomsRequest = function* handleRoomsRequest() {
 	try {
-		removeSub();
+		yield removeSub();
 		roomsSub = yield RocketChat.subscribeRooms();
 		const newRoomsUpdatedAt = new Date();
 		const server = yield select(state => state.server.server);
@@ -53,8 +53,8 @@ const handleRoomsRequest = function* handleRoomsRequest() {
 	}
 };
 
-const handleLogout = function handleLogout() {
-	removeSub();
+const handleLogout = function* handleLogout() {
+	yield removeSub();
 };
 
 const root = function* root() {
